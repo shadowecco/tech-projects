@@ -1,8 +1,16 @@
 #This was a small cute little project started by FreeCodeCamp but the original file focused on input as well as conditions. I am constantly expanding it to include imported programs and functions.
 
-print("Welcome to Ravenbrooke")
-name = input("What is your name? ")
-rank = input("Are you a Lord or a Lady? ")
+#Created two functions. If the player was to use Random Capitals and small letters in input, the functions will tidy up answer so the first word is Capitalised and the rest is lower case
+
+def player_rank():
+    rank = input("Welcome to the mythical kingdom of Ravenbrooke. First we need to first know your rank. Are you a Lord, Lady, Knight or Squire? (Choose One.) Enter here: ").lower() 
+    return(rank.capitalize())
+
+def player_name():
+    name = input("Now we need to first know your name. Enter here: ").lower()
+    return(name.capitalize())
+
+print("Welcome to this adventure game")
 age = int(input("What is your age? "))
 
 health = 10
@@ -10,9 +18,9 @@ health = 10
 if age >= 18:
     print("You are old enough to play!")
 
-    wants_to_play = input("Do you want to play? ").lower()
+    wants_to_play = input("Do you want to play? ")
     if wants_to_play == "yes":
-        print("Welcome to the mythiocal kingdom of Ravenbrooke", rank + " " + name, ".") 
+        print("Hello" + " " + player_rank() + " " + player_name(),".") 
         print("You are staring with", health, "health")
         print("Let's play!")
         print("You were minding your business when POOF! You are transported into the middle of a dark forest. There is a long road with signs pointing to the left and the right.")
