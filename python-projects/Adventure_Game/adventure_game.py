@@ -1,14 +1,7 @@
 #This was a small cute little project started by FreeCodeCamp but the original file focused on input as well as conditions. I am constantly expanding it to include imported programs and functions.
 
-#Created two functions. If the player was to use Random Capitals and small letters in input, the functions will tidy up answer so the first word is Capitalised and the rest is lower case
+#Took out the functions as the rank and name may become relevant in the game and it would be hard to retrieve via a function. Basically, it's the same principles of upper and lower case but outisde a function.  
 
-def player_rank():
-    rank = input("Welcome to the mythical kingdom of Ravenbrooke. First we need to first know your rank. Are you a Lord, Lady, Knight or Squire? (Choose One.) Enter here: ").lower() 
-    return(rank.capitalize())
-
-def player_name():
-    name = input("Now we need to first know your name. Enter here: ").lower()
-    return(name.capitalize())
 
 print("Welcome to this adventure game")
 age = int(input("What is your age? "))
@@ -20,7 +13,11 @@ if age >= 18:
 
     wants_to_play = input("Do you want to play? ")
     if wants_to_play == "yes":
-        print("Hello" + " " + player_rank() + " " + player_name(),".") 
+        name = input("Enter your name here: ").lower()
+        nameReturned = name.capitalize()
+        rank = input("Now we need to know your rank. Are you a Lord, Lady, Knight or Squire? (Choose One.) Enter here: ").lower()
+        rankReturned = rank.capitalize()
+        print("Welcome to the mythical kingdom of Ravenbrooke," + " " + rankReturned + " " + nameReturned,".") 
         print("You are staring with", health, "health")
         print("Let's play!")
         print("You were minding your business when POOF! You are transported into the middle of a dark forest. There is a long road with signs pointing to the left and the right.")
