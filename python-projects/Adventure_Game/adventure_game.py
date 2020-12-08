@@ -15,9 +15,15 @@ if age >= 18:
     if wants_to_play == "yes":
         name = input("Enter your name here: ").lower()
         nameReturned = name.capitalize()
+        rankList= ["Lord", "Lady", "Knight", "Squire"]; 
         rank = input("Now we need to know your rank. Are you a Lord, Lady, Knight or Squire? (Choose One.) Enter here: ").lower()
-        rankReturned = rank.capitalize()
-        print("Welcome to the mythical kingdom of Ravenbrooke," + " " + rankReturned + " " + nameReturned,".") 
+        rankReturned = rank.capitalize()  
+        while rankReturned not in rankList:
+            rankReturned = input("Invalid choice. Please try again. ")
+            if rankReturned in rankList:
+                break
+        if rankReturned in rankList:
+            print("Welcome to the mythical kingdom of Ravenbrooke," + " " + rankReturned + " " + nameReturned,".")
         print("You are staring with", health, "health")
         print("Let's play!")
         print("You were minding your business when POOF! You are transported into the middle of a dark forest. There is a long road with signs pointing to the left and the right.")
