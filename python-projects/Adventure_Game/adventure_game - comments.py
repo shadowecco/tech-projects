@@ -58,8 +58,7 @@ if age >= 18:
         
 #Name Generator. This is arranged so no matter what the player writes, whether it's all capitals or a mixture, the final structure will always be lower case except for the first letter which will be capitalised.
         
-        name = input("Enter your name here:\n").lower()
-        nameReturned = name.capitalize()
+        name = input("Enter your name here:\n").title()
 
 #Rank Generator. This is arranged so that the player can only choose only one of four types of characters and a loop will happen until the player chooses one from the list.
 #Once again, no matter how the player types it, the result will always be lowercase with the first letter being capitalised.
@@ -67,15 +66,13 @@ if age >= 18:
         print("Now you need to pick a rank. Here are your choices: ")
         print(*rankList, sep= "/")
         time.sleep(ts1)
-        rank = input("Choose a rank: \n").lower()
-        rankReturned = rank.capitalize()
-        while rankReturned not in rankList:
-            rankReturned = input("Invalid choice. Please try again.\n").lower()
-            rankReturned = rankReturned.capitalize()
-            if rankReturned in rankList:
+        rank = input("Choose a rank: \n").title()
+        while rank not in rankList:
+            rank = input("Invalid choice. Please try again.\n").title()
+            if rank in rankList:
                 break
-        if rankReturned in rankList:
-            print("Welcome to the mythical kingdom of Ravenbrooke," + " " + rankReturned + " " + nameReturned,".")
+        if rank in rankList:
+            print("Welcome to the mythical kingdom of Ravenbrooke," + " " + rank + " " + name,".")
             time.sleep(ts1)
             print("You are staring with", health, "health")
             time.sleep(ts1)
@@ -115,7 +112,7 @@ if age >= 18:
                     print("You managed to get across, but you were bit by a fish and lost 5 health.")
                     health -= 5
                     time.sleep(ts1)
-                    print("You have ", health, "health left. Be careful with your next move.")
+                    print("You have", health, "health left. Be careful with your next move.")
 
 
 #GAME PATH 3B - IF PLAYER GOES AROUND THE LAKE - ENDS UP AT PATH 4
@@ -191,6 +188,7 @@ if age >= 18:
                             health +=5
                             time.sleep(ts1)
                             print("You now have", health, "health")
+                            time.sleep(ts1)
 
 #GAME PATH 6B - IF ANSWER IS YES
                             
@@ -199,8 +197,17 @@ if age >= 18:
                             health -=5
                             time.sleep(ts1)
                             print("You now have", health, "health")
+                            time.sleep(ts1)
                             if health == 0:
                                 print("You lost. Game over.")
+                            if health <=5:
+                                time.sleep(ts1)
+                                print("Your health is low. Be careful.")
+
+#GAME PATH 7 - NEW PATH
+
+                        print("You are going further down the river.")
+                        
 
 #GAME PATH 5A - IF GUESSES INCORRECTLY
 
@@ -221,12 +228,14 @@ if age >= 18:
                     time.sleep(ts1)
                     if health == 0:
                         print("You lost. Game over.")
+                    if health >= 5:
+                        print("The path is unclear to you. Maybe the path will open to you one day.")
 
                     
 #GAME PATH 2B - IF THE PLAYER GOES RIGHT
 
             elif left_or_right in answer_right:
-                print("You fell down and lost...")
+                print("The path is unclear to you. Maybe the path will open to you one day.")
      
 #PATH 1B - CHOICE OF PLAY. THIS PATH FOLLOWS IF THE PLAYER STATES NO
 #This is subject to change. At the moment I'm focusing on what happens if the player chooses left. 

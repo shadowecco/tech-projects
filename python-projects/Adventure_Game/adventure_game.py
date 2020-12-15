@@ -21,7 +21,6 @@ rankList= ["Lord", "Lady", "Knight", "Squire"];
 health = 10
 
 troll_riddle_count=2
-
 print("Welcome to this adventure game")
 time.sleep(ts1)
 age = int(input("What is your age?\n"))
@@ -29,20 +28,17 @@ if age >= 18:
     print("Yeah! You are old enough to play!")
     wants_to_play = input("Do you want to play?\n")
     if wants_to_play in answer_yes:
-        name = input("Enter your name here:\n").lower()
-        nameReturned = name.capitalize()
+        name = input("Enter your name here:\n").title()
         print("Now you need to pick a rank. Here are your choices: ")
         print(*rankList, sep= "/")
         time.sleep(ts1)
-        rank = input("Choose a rank: \n").lower()
-        rankReturned = rank.capitalize()
-        while rankReturned not in rankList:
-            rankReturned = input("Invalid choice. Please try again.\n").lower()
-            rankReturned = rankReturned.capitalize()
-            if rankReturned in rankList:
+        rank = input("Choose a rank: \n").title()
+        while rank not in rankList:
+            rank = input("Invalid choice. Please try again.\n").title()
+            if rank in rankList:
                 break
-        if rankReturned in rankList:
-            print("Welcome to the mythical kingdom of Ravenbrooke," + " " + rankReturned + " " + nameReturned,".")
+        if rank in rankList:
+            print("Welcome to the mythical kingdom of Ravenbrooke," + " " + rank + " " + name,".")
             time.sleep(ts1)
             print("You are staring with", health, "health")
             time.sleep(ts1)
@@ -52,18 +48,18 @@ if age >= 18:
             time.sleep(ts1)
             left_or_right = input("So, do you choose left or right (Choose L for Left and R for Right)?\n").lower()
             while left_or_right != "l" and left_or_right != "left" and left_or_right !=  "r" and left_or_right != "right":
-                left_or_right = input("Invalid choice. Choose Left or Right.\n").lower()  
+                left_or_right = input("Invalid choice. Choose Left or Right.\n").lower()
             if left_or_right in answer_left:
                 print("Okay so you follow the path and reach a lake. Do you swim across or go around?")
                 time.sleep(ts1)
                 lake_ans = input("Choose A for across or B for around: \n")
                 while lake_ans != "a" and lake_ans != "A" and lake_ans != "b" and lake_ans != "B":
-                    lake_ans = input("Invalid choice. Choose A or B.\n").lower()  
+                    lake_ans = input("Invalid choice. Choose A or B.\n").lower()
                 if lake_ans in answer_A:
                     print("You managed to get across, but you were bit by a fish and lost 5 health.")
                     health -= 5
                     time.sleep(ts1)
-                    print("You have ", health, "health left. Be careful with your next move.")
+                    print("You have", health, "health left. Be careful with your next move.")
                 if lake_ans in answer_B:
                     print("You went around and reached the other side of the lake.")
                 time.sleep(ts1)
@@ -111,13 +107,19 @@ if age >= 18:
                             health +=5
                             time.sleep(ts1)
                             print("You now have", health, "health")
+                            time.sleep(ts1)
                         if food_choice in answer_yes:
                             print("Oh No! The apple was posionous and you lose 5 health")
                             health -=5
                             time.sleep(ts1)
                             print("You now have", health, "health")
+                            time.sleep(ts1)
                             if health == 0:
                                 print("You lost. Game over.")
+                            if health <=5:
+                                time.sleep(ts1)
+                                print("Your health is low. Be careful.")
+                        print("You are going further down the river.")
                     if troll_riddle_count==0:
                         print("The troll laughs at you and knocks you out with a very large club. You lose your health and die.")
                         time.sleep(ts1)
@@ -130,8 +132,10 @@ if age >= 18:
                     time.sleep(ts1)
                     if health == 0:
                         print("You lost. Game over.")
+                    if health >= 5:
+                        print("The path is unclear to you. Maybe the path will open to you one day.")
             elif left_or_right in answer_right:
-                print("You fell down and lost...")    
+                print("The path is unclear to you. Maybe the path will open to you one day.")  
     else:
         print("Okay. Bye, then.")
 else:
