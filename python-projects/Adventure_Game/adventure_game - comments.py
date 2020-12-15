@@ -13,7 +13,7 @@ import time
 
 #Time functions so the screen doesn't become overloaded with text too quickly.
 
-sa = 1
+ts1 = 1
 
 #Just to avoid repetition of answers and to simplify
 answer_A = ["A", "a"]
@@ -23,7 +23,7 @@ answer_yes = ["Y", "YES", "y", "yes"]
 answer_no = ["N", "NO", "n", "no"]
 answer_left = ["l", "left",]
 answer_right = ["r", "right",]
-answer_riddle = ["go away troll"]
+answer_troll_riddle = ["go away troll"]
 
 #Lists of ranks that player can currecntly play as. More can be added and they will be automatically added onto when the choice of rank comes up. 
 
@@ -33,10 +33,16 @@ rankList= ["Lord", "Lady", "Knight", "Squire"];
 
 health = 10
 
+#Number of attempts in tackling riddles. They start at 2 so it can get down to 0 in 3 attempts.
+#Numbers start with 0 so starting at 3 brings 4 attempts.
+
+troll_riddle_count=2
+
+
 #Welcome
 
 print("Welcome to this adventure game")
-time.sleep(sa)
+time.sleep(ts1)
 age = int(input("What is your age?\n"))
 
 #AGE PATH - ARE THEY 18 OR OLDER?
@@ -60,8 +66,8 @@ if age >= 18:
 
         print("Now you need to pick a rank. Here are your choices: ")
         print(*rankList, sep= "/")
-        time.sleep(sa)
-        rank = input("Choose a rank: ").lower()
+        time.sleep(ts1)
+        rank = input("Choose a rank: \n").lower()
         rankReturned = rank.capitalize()
         while rankReturned not in rankList:
             rankReturned = input("Invalid choice. Please try again.\n").lower()
@@ -70,13 +76,13 @@ if age >= 18:
                 break
         if rankReturned in rankList:
             print("Welcome to the mythical kingdom of Ravenbrooke," + " " + rankReturned + " " + nameReturned,".")
-            time.sleep(sa)
+            time.sleep(ts1)
             print("You are staring with", health, "health")
-            time.sleep(sa)
+            time.sleep(ts1)
             print("Let's play!")
-            time.sleep(sa)
+            time.sleep(ts1)
             print("You were minding your business when POOF! You are transported into the middle of a dark forest. There is a long road with signs pointing to the left and the right.")
-            time.sleep(sa)
+            time.sleep(ts1)
             
 #GAME PATH 2 - DOES THE PLAYER GO LEFT OR RIGHT?
 
@@ -95,8 +101,8 @@ if age >= 18:
                 
             if left_or_right in answer_left:
                 print("Okay so you follow the path and reach a lake. Do you swim across or go around?")
-                time.sleep(sa)
-                lake_ans = input("Choose A for across or B for around: ")
+                time.sleep(ts1)
+                lake_ans = input("Choose A for across or B for around: \n")
                 
 #GAME PATH 3 - IF PLAYER CHOOSES SOMETHING OTHER THAN A OR B
                 
@@ -108,20 +114,20 @@ if age >= 18:
                 if lake_ans in answer_A:
                     print("You managed to get across, but you were bit by a fish and lost 5 health.")
                     health -= 5
-                    time.sleep(sa)
+                    time.sleep(ts1)
                     print("You have ", health, "health left. Be careful with your next move.")
 
 
 #GAME PATH 3B - IF PLAYER GOES AROUND THE LAKE - ENDS UP AT PATH 4
 
-                if lake_ans in answer_A:
+                if lake_ans in answer_B:
                     print("You went around and reached the other side of the lake.")
 
 #GAME PATH 4 - RIVER OR HOUSE
                     
-                time.sleep(sa)
+                time.sleep(ts1)
                 print("You notice a house and a river.")
-                time.sleep(sa)
+                time.sleep(ts1)
                 hr_ans = input("Which do you go to? (Choose A for river or B for house)?\n").lower()
 
 #GAME PATH 4 - IF PLAYER CHOOSES SOMETHING OTHER THAN A OR B 
@@ -133,41 +139,57 @@ if age >= 18:
 
                 if hr_ans in answer_A:
                     print("You walk along until you see a acrap piece of paper saying:")
-                    time.sleep(sa)
-                    print("Turn the letters around and find its partner.")
-                    time.sleep(sa)
+                    time.sleep(ts1)
+                    print("'Turn the letters around and find its partner.'")
+                    time.sleep(ts1)
 
 #GAME PATH 5 - TROLL RIDDLE
                     
                     print("You put the piece of paper in your pocket and keep walking. A while later, you find yourself at a bridge with a troll-like creature standing before it.")
-                    time.sleep(sa) 
-                    print("The troll cries out, 'You can only pass me if you solve the riddle of the bridge. Solve it first time and you may pass. Fail and I kill you.'")
-                    time.sleep(sa)
+                    time.sleep(ts1) 
+                    print("The troll cries out, 'You can only pass me if you solve the riddle of the bridge.")
+                    time.sleep(ts1)
+                    print("...solve it and you may pass. Fail and I kill you.")
+                    time.sleep(ts1)
+                    print("...you have three attempts.'")
+                    time.sleep(ts1)
                     print("He points to a sign which says 'TL ZDZB GILOO'")
-                    time.sleep(sa)
+                    time.sleep(ts1)
 
-#GAME PATH 5 - POSSIBLE OPPORTUNITY TO CREATE A SYSTEM WHERE PLAYER GETS VALID NUMBER OF TRIES TO GET IT INSTEAD OF JUST ONE
+#GAME PATH 5 - WHAT HAPPENS IF PLAYER GUESSES INCORRECTLY AND THERE ARE STILL ATTEMPTS LEFT
 
-                    riddle_ans=input("Enter your answer:\n").lower()
-
-#GAME PATH 5A - IF GUESSES CORRECTLY
+                    troll_riddle=input("Enter your answer:\n").lower()
+                    while troll_riddle not in answer_troll_riddle:
+                        troll_riddle_count-= 1;
+                        count_modify=(troll_riddle_count+1)
+                        print("Wrong!")
+                        time.sleep(ts1)
+                        print("You have" ,count_modify, "attempts left.")
+                        time.sleep(ts1)
+                        troll_riddle=input("Try again.\n")
+                        if troll_riddle_count==0:
+                            break
+                        if troll_riddle in answer_troll_riddle:
+                            break
                     
-                    if riddle_ans in answer_riddle:
+#GAME PATH 5A - IF GUESSES CORRECTLY
+
+                    if troll_riddle in answer_troll_riddle:
                         print("You did it! The troll throws a tantrum but he allows you to pass.")
-                        time.sleep(sa)
+                        time.sleep(ts1)
                         print("As he stomps off, he drops some black apples.")
-                        time.sleep(sa)
+                        time.sleep(ts1)
 
 #GAME PATH 6 - EATING APPLES 
 
-                        food_choice=input("Do you eat one? (yes/no)\n").lower()
+                        food_choice=input("Do you eat one? (Y)es/(N)o\n").lower()
 
 #GAME PATH 6A - IF ANSWER IS NO
 
                         if food_choice in answer_no:
                             print("Very wise. They look poisonous anyway. You walk across the bridge and see many apple trees. You pick one and eat it. You gained 5 health.")
                             health +=5
-                            time.sleep(sa)
+                            time.sleep(ts1)
                             print("You now have", health, "health")
 
 #GAME PATH 6B - IF ANSWER IS YES
@@ -175,16 +197,16 @@ if age >= 18:
                         if food_choice in answer_yes:
                             print("Oh No! The apple was posionous and you lose 5 health")
                             health -=5
-                            time.sleep(sa)
+                            time.sleep(ts1)
                             print("You now have", health, "health")
                             if health == 0:
                                 print("You lost. Game over.")
 
 #GAME PATH 5A - IF GUESSES INCORRECTLY
 
-                    else:
+                    if troll_riddle_count==0:
                         print("The troll laughs at you and knocks you out with a very large club. You lose your health and die.")
-                        time.sleep(sa)
+                        time.sleep(ts1)
                         print("You lost. Game over.")
                     
 
@@ -194,9 +216,9 @@ if age >= 18:
                 if hr_ans in answer_B:
                     print("You go to the house and are greeted by the owner... He doesn't like you and you lose 5 health")
                     health -= 5
-                    time.sleep(sa)
+                    time.sleep(ts1)
                     print("You now have", health, "health")
-                    time.sleep(sa)
+                    time.sleep(ts1)
                     if health == 0:
                         print("You lost. Game over.")
 
