@@ -1,3 +1,5 @@
+**Last updated:** 17th December 2020
+
 # Text-based Adventure Game
 
 This was a small cute little project started by FreeCodeCamp but the original file focused on input as well as conditions. I am expanding it to include imported programs and functions. This is intended to be an ongoing project adding new paths and choices for the player. I also intend to make it as fool-proof as possible. Usually in python programs, when someone types in something that is not a valid choice, it tends to quit the game. I intend to create a loop for invalid choices. 
