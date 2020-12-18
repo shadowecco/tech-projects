@@ -9,8 +9,5 @@ There are two versions of the game:
 * One with comments stating all the different game paths and my reasoning for certain logic loops.
 * One that is clean of comments.
 
-<<<<<<< HEAD
+
 I am also learning Javascript and I would like to make a Javascript version of this so it can be playable on the web.
-=======
-I am also learning Javascript and I would like to make a Javascript version of this so it can be playable on the web.
->>>>>>> 9eb75c0b4195f1d223736f552a5393b08c5d7dce
