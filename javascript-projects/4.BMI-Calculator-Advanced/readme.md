@@ -1,6 +1,6 @@
-#Challenge from the App Brewery:
+# Challenge from the App Brewery:
 
-##BMI Calculator Challenge (Advanced)
+## BMI Calculator Challenge (Advanced)
 
 Create a BMI calculator using Javascript functions
 

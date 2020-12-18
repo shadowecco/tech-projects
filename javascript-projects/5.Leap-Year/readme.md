@@ -1,6 +1,6 @@
-#Challenge from the App Brewery:
+# Challenge from the App Brewery:
 
-##Leap Year 
+## Leap Year 
 
 Calculate if a year is a leap year.
 
