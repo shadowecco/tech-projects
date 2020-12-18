@@ -31,3 +31,7 @@ Write function which will select a random name from a list of names.
 **7. Fibonacci Coding Exercise**
 
 Write a function where you can call upon the Fibonacci sequence. 
+
+**8.Love Generator**
+
+Based on a retro idea of taking the player's name, their crush's names and caluculating a love score number.
