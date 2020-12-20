@@ -4,11 +4,11 @@ Just some small python projects:
 
 **1. Encryption Game**
 
-A cute little program which can encrypts words that are entered into the program. 
+A cute little program which can encrypts words that are entered into the program.
 
 **2. Number Guessing Game**
 
-A little game where the player guesses the correct number which is generated automatically by the program. Once the player has guessed the correct number, the programs returns the number of attempts it took to guess the right number as well as the list of the numbers guessed. 
+A little game where the player guesses the correct number which is generated automatically by the program. Once the player has guessed the correct number, the programs returns the number of attempts it took to guess the right number as well as the list of the numbers guessed.
 
 **3. Rock Paper Scissors**
 
@@ -27,4 +27,13 @@ I decided to see if this logic could be used translated into a workable Python p
 
 **5. Love Generator**
 
-Based on a retro idea of taking the player's name, their crush's names and caluculating a love score number. It was originally done on Javascript as part of a course but I wated to see if it could be done as a Python program.  
+Based on a retro idea of taking the player's name, their crush's names and calculating a love score number. It was originally done on Javascript as part of a course but I wanted to see if it could be done as a Python program.  
+
+**6. Hangman**
+
+Play Hangman
+
+**7. Text-based Adventure Game v1 and v2**
+
+v1 was based on a FreeCodeCamp project.
+v2 is going to be a more complex version with more choices and game paths. And it will be on going.
