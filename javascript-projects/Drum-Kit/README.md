@@ -1,3 +1,5 @@
-# Love Generator
+# Challenge from the App Brewery:
 
-Based on a retro idea of taking the player's name, their crush's names and caluculating a love score number.
+# Drum Kit
+
+Playing Drum noises with the button or keyboard.

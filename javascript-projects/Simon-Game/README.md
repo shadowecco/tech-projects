@@ -1,3 +1,12 @@
-# Love Generator
+# Challenge from the App Brewery:
 
-Based on a retro idea of taking the player's name, their crush's names and caluculating a love score number.
+# Simon
+
+Pressing the colours in the correct sequence. One wrong move ends the game.
+
+Created with:
+
+- HTML
+- CSS
+- Javascript
+- JQuery
