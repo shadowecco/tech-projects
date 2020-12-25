@@ -14,3 +14,9 @@ discover them.
 This is a different version to my original take on the game because I want to make it more complex. Whilst the player 
 will have the same options as they did in the first version, there may be variations depending on the rank that the 
 player chose at the start of the game.
+
+The main file to start the game is "adventure game v2 - comments.py".
+
+The text files are full of female and male character names.
+The other py files are functions and lists essential for the game. They are placed in separate files to keep the main 
+file focused on the game flow and to keep the game as tidy as possible.  
