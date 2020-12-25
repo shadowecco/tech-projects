@@ -10,6 +10,9 @@
 #+ First 3 letters of the town you were born in
 
 import random
+import time
+
+ts1 = 1
 
 alliance_list = ["Jedi", "Sith", "Neutral", "Rebel Alliance", "Galactic Empire", "Resistance", "First Order"]
 
@@ -28,4 +31,9 @@ b_town_3 = b_town[:3]
 sw_fname = l_name_3 + f_name_2 
 sw_lname = m_name_2 + b_town_3
 
-print("Your Star Wars name is", sw_fname, sw_lname, "and your alliance is with the", alliance_choice) 
+print("Your Star Wars name is", sw_fname, sw_lname,)
+time.sleep(ts1)
+if alliance_choice == "Neutral":
+    print("Your alliance is Neutral.") 
+else:
+    print("Your alliance is with the", alliance_choice)
