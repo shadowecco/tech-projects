@@ -29,3 +29,6 @@ Adopted from a course at Udemy.
 Pressing the colours in the correct sequence. One wrong move ends the game.
 Adopted from a course at Udemy. 
 
+**5. Quote Generator (HTML/CSS/Javascript/)**
+
+Generates a random quote
