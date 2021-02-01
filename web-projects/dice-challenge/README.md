@@ -8,4 +8,4 @@ Created with:
 
 - HTML
 - CSS
-- Bootstrap.
+- Javascript

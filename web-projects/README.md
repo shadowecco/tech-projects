@@ -20,7 +20,10 @@ Playing a dice game by clicking the 'refresh' button.
 Adopted from a course at Udemy. 
 
 
-** **
+**3. Dice Challenge (HTML/CSS/Javascript)**
+
+Playing Drum noises with the button or keyboard.
+Adopted from a course at Udemy. 
 
 
 

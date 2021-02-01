@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <title>Dice Game</title>
 
     <!-- Favicon -->
 
@@ -12,71 +13,40 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
 
+    <!-- Stylesheet -->
 
-
-    <title>CodePen - Chadwick Boseman</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="styles.css">
 
 </head>
 
 <body>
-    <!-- partial:index.partial.html -->
-    <main id="main">
-        <h1 id="title">Chadwick Boseman</h1>
-        <p>A bright star forever shining in the sky</p>
-        <p>Wakanda Forever!</p>
-        <figure id="img-div">
-            <img id="image" src="images/chadwick-1.jpg" alt="Chadwick Boseman" width="500" height="600" />
-            <figcaption id="img-caption">
-                Chadwick Boseman
-            </figcaption>
-        </figure>
 
-        <p>Chadwick Aaron Boseman was born on 29th November 1976 in South Carolina.
-            <p>Boseman achieved international fame for playing superhero Black Panther in the Marvel Cinematic Universe (MCU) from 2016 to 2019. His first MCU film was Captain America: Civil War (2016) which led to his protayal of the title character in
-                Black Panther.
-            </p>
+    <div class="container">
+        <h1>Welcome to the Game</h1>
+        <h1>Refresh to Play</h1>
 
-            <img id="image" src="images/chadwick-2.jpg" alt="Chadwick Boseman" width="500" height="600" />
-            <figcaption id="img-caption">
-                Chadwick Boseman as T'Challa/Black Panther
-            </figcaption>
+        <h1 id="winner"></h1>
 
-            <p> He receieved critical acclaim for his role as Black Panther and he was the first black actor to headline an MCU film.</p>
-
-            <p>He passed away 28th August 2020 from colon cancer. He was diagnosed with stage III colon cancer in 2016, which eventually progressed to stage IV before 2020. Despite this, this was not declared publicily until after his death. A tweet from
-                his family became the most-liked tweet in history.</p>
-
-            To find out more, here is his
-            <a id="tribute-link" href="https://en.wikipedia.org/wiki/Chadwick_Boseman" target="_blank">Wikipedia page</a>
-
-    </main>
-
-    <!-- Footer -->
-
-    <footer class="footer">
-
-        <div class="footer-links">
-            <a href="mailto:h.l.yates@hotmail.com"><i class="far fa-envelope"></i></a>
-            <a href="http://www.helenthebluefish.com"><i class="fas fa-fish"></i></a>
-            <a href="https://www.linkedin.com/in/helen-yates"><i class="fab fa-linkedin"></i></a>
-            <a href="https://www.facebook.com/helenyates83"><i class="fab fa-facebook"></i></a>
-            <a href="https://twitter.com/HelenYates83"><i class="fab fa-twitter"></i></a>
-            <a href="https://github.com/shadowecco"><i class="fab fa-github"></i></a>
-            <a href="https://www.freecodecamp.org/shadow_ecco"><i class="fab fa-free-code-camp"></i></a>
-            <a href="https://codepen.io/shadow_ecco"><i class="fab fa-codepen"></i></a>
+        <div class="dice">
+            <p>Player 1</p>
+            <img class="img1" src="images/dice6.png">
         </div>
-        <p class="copyright">
-            Copyright &copy;
-            <script>
-                document.write(new Date().getFullYear());
-            </script> All rights reserved | Helen Yates</p>
-    </footer>
 
+        <div class="dice">
+            <p>Player 2</p>
+            <img class="img2" src="images/dice6.png">
+        </div>
 
-    <!-- partial -->
-    <script src="./script.js"></script>
+    </div>
 
+    <script type="text/javascript" src="index.js"></script>
 </body>
+
+<footer>
+    Copyright &copy;
+    <script>
+        document.write(new Date().getFullYear());
+    </script> All rights reserved | Helen Yates
+</footer>
 
 </html>
