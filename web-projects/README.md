@@ -19,11 +19,13 @@ Adapted from a FreeCodeCamp assignment
 Playing a dice game by clicking the 'refresh' button.
 Adopted from a course at Udemy. 
 
-
-**3. Dice Challenge (HTML/CSS/Javascript)**
+**3. Drum Kit (HTML/CSS/Javascript)**
 
 Playing Drum noises with the button or keyboard.
 Adopted from a course at Udemy. 
 
+**4. Simon Game (HTML/CSS/Javascript/JQuery)**
 
+Pressing the colours in the correct sequence. One wrong move ends the game.
+Adopted from a course at Udemy. 
 
