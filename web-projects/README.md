@@ -36,3 +36,8 @@ Generates a random quote
 **6. Love Generator (HTML/CSS/Javascript/)**
 
 Generates a random love score
+
+**7. Star Wars Generator (HTML/CSS/Javascript/)**
+
+Generates a "Star Wars" style based on certain conditions. 
+
