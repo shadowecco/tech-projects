@@ -32,3 +32,7 @@ Adopted from a course at Udemy.
 **5. Quote Generator (HTML/CSS/Javascript/)**
 
 Generates a random quote
+
+**6. Love Generator (HTML/CSS/Javascript/)**
+
+Generates a random love score
