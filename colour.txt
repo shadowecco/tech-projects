@@ -1,0 +1,31 @@
+Harley Quinn #1
+
+darkpink: FF94BF
+softpink: FFE3EA
+softblue: D0F3FF
+skyblue:B5F9FF
+offwhite: FDFDFD
+
+Harley Quinn #2 - Classic
+
+red1: DB0000
+red2: B80000
+reddarkest: 960202
+black: 000000
+white: FFFFFF
+
+
+Harley Quinn #3
+
+darkblue: 19CFF9
+turqouise: 8CE4E2
+blonde: FFF9CC
+softpink: FDC6D1
+darkpink: FB93BA
+
+Harley Quinn #4
+
+lace pink: FF9ABF
+blond: FAF8A1
+skyblue: B5F9FF
+Off White: FDFDFD
