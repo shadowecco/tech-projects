@@ -1,4 +1,4 @@
-**Last updated:** 25th December 2020
+**Last updated:** 18th July 2021
 
 # Text-based Adventure Game v2
 
@@ -23,8 +23,8 @@ This is a different version to my original take on the game because I want to ma
 will have the same options as they did in the first version, there may be variations depending on the rank that the 
 player chose at the start of the game.
 
-The main file to start the game is "adventure game v2 - comments.py".
+The main file to start the game is "adventure game v2.py".
 
 The text files are full of female and male character names.
-The other py files are functions and lists essential for the game. They are placed in separate files to keep the main 
-file focused on the game flow and to keep the game as tidy as possible.  
+The other py files are functions essential for the game. They are placed in separate files to keep the main 
+file focused on the game flow and in a seperate folder to keep the game as tidy as possible.  

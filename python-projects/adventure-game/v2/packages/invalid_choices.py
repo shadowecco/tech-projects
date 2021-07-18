@@ -5,8 +5,6 @@ import time
 ts750ms = 750/1000 #750 milliseconds
 ts1s = 1 #1 second
 
-health = 10
-
 #Brings back invalid choice if a or b is not picked 
 
 def invalid_ab(ans):
@@ -47,6 +45,17 @@ def invalid_yn(ans):
         time.sleep(ts750ms)
         if ans == "y" or ans == "yes" or ans == "n" or ans == "yes":
             return ans
+
+# Brings back invalid choice if valid item from house is not picked
+
+def invalid_collect_item(collect_item):
+
+    while house_item != "beans" and house_item != "apple" and house_item != "sword" and house_item != "wand":
+        house_item = input("Invalid choice. Choose one of the items.\n").lower()
+        time.sleep(ts750ms)
+        if house_item == "beans" or house_item == "apple" or house_item == "sword" or house_item == "wand":
+            return house_item
+
 
 
 
