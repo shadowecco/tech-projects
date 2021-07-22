@@ -1,7 +1,7 @@
 # Star Wars Name Generator
 
-[View the page here](https://shadowecco.github.io/portfolio/star-wars-name-generator/).
-[Python Version (@replit.com)](https://replit.com/@HelenYates/4-Star-Wars-Name-Generator).
+[View the page here](https://shadowecco.github.io/portfolio/star-wars-name-generator/).<br />
+[Python Version (@replit.com)](https://replit.com/@HelenYates/4-Star-Wars-Name-Generator).<br />
 [Python Version (Code)](https://github.com/shadowecco/tech-projects/tree/main/python-projects/star-wars-name-generator).
 
 Back in the late 1990s/200s, there was a trend of coming up with your Star Wars based on the following conditions:

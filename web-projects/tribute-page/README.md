@@ -1,6 +1,6 @@
 A Pen created on CodePen.io.
 
-[My CodePen Link](https://codepen.io/shadow_ecco/pen/zYqdqQN).
+[My CodePen Link](https://codepen.io/shadow_ecco/pen/zYqdqQN).<br />
 [View the page here](https://shadowecco.github.io/portfolio/tribute-page/).
 
 In response to the challenge:
