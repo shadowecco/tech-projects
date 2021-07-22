@@ -1,16 +1,16 @@
 # Love Generator
 
+[View the page here](https://shadowecco.github.io/portfolio/love-generator/).
+[Javascript Version (@replit.com)](https://replit.com/@HelenYates/Love-Generator).
+[Python Version (@replit.com)](https://replit.com/@HelenYates/5-Love-Generator).
+[Python Version (Code)](https://github.com/shadowecco/tech-projects/tree/main/python-projects/love-generator).
+
 Generates a random love score
 
-Created with:
+Created  Visual Studio Code with:
 
 - HTML
 - CSS
 - Javascript
 
-
-[View the page here](http://www.thebluefish.com/portfolio/tribute-page).
-
- <p class="card-text">The python file was created on Python IDLE and can be found <a href="https://github.com/shadowecco/tech-projects/tree/main/python-projects/love-generator " class="text-primary" target="_blank">here</a> (GitHub) and can be tested <a href="https://repl.it/@HelenYates/5-Love-Generator" class="text-primary"
-                                                target="_blank">here</a> (repli.it).</p>
-
+(Bootstrap was added later to add a "View Button" as well as tweak a few other features. The main coding styles are stated above)

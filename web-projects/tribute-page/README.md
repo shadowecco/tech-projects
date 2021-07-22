@@ -1,7 +1,7 @@
 A Pen created on CodePen.io.
 
 [My CodePen Link](https://codepen.io/shadow_ecco/pen/zYqdqQN).
-[View the page here](http://www.thebluefish.com/portfolio/tribute-page).
+[View the page here](https://shadowecco.github.io/portfolio/tribute-page/).
 
 In response to the challenge:
 
@@ -14,4 +14,5 @@ Created with:
 - HTML
 - CSS
 
+(Bootstrap was added later to add a "View Button" as well as tweak a few other features. The main coding styles are stated above)
 

@@ -2,10 +2,15 @@
 
 # Dice Game
 
-Based on a retro idea of taking the player's name, their crush's names and caluculating a love score number.Refresh the page to make two dice roll. The player with the highest dice roll wins!
+[View the page here](https://shadowecco.github.io/portfolio/dice-challenge/).
 
-Created with:
+Refresh the page to make two dice roll. The player with the highest dice roll wins!
+
+Created on Visual Studio Code with:
 
 - HTML
 - CSS
 - Javascript
+-Jquery
+
+(Bootstrap was added later to add a "View Button" as well as tweak a few other features. The main coding styles are stated above)
