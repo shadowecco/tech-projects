@@ -5,6 +5,11 @@
     text-align: center;
 }
 
+.github-button {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 .dice {
     text-align: center;
     display: inline-block;

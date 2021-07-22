@@ -5,6 +5,12 @@ body {
     background-color: #283149;
 }
 
+.github-button {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
 h1 {
     font-size: 5rem;
     color: #DBEDF3;

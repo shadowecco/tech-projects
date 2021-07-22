@@ -2,13 +2,24 @@
 body {
     text-align: center;
     background-color: #011F3F;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.github-button {
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 #level-title {
     font-family: 'Press Start 2P', cursive;
-    font-size: 3rem;
-    margin: 5%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
     color: #FEF2BF;
+}
+
+.row {
+    margin-bottom: 0px;
 }
 
 .container {
@@ -17,7 +28,7 @@ body {
     margin: auto;
 }
 
-.btn {
+.simon-btn {
     margin: 25px;
     display: inline-block;
     height: 200px;
@@ -83,5 +94,5 @@ footer {
     color: #EEEEEE;
     text-align: center;
     padding-top: 5px;
-    font-size: 15px;
+    font-size: 10px;
 }
