@@ -83,6 +83,9 @@ a {
 /* Footer */
 
 footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     margin-top: 5%;
     font-family: 'Boogaloo', cursive;
     color: #EEEEEE;
@@ -99,11 +102,13 @@ footer {
 
 .footer-links a {
     color: #EEEEEE;
-    margin-right: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .copyright {
+    font-size: 15px;
     color: #EEEEEE;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 5px;
 }

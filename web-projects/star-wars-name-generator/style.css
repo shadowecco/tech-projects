@@ -143,17 +143,18 @@ input {
 /* Footer */
 
 .footer {
+    position: absolute;
     bottom: 0;
     width: 100%;
     margin-top: 5%;
-    font-size: 14px;
     text-align: center;
     background: rgba(63, 63, 63, 0.5);
-    position: absolute;
 }
 
 .footer-links {
     display: inline-block;
+    text-align: center;
+    font-size: 25px;
     position: relative;
     z-index: 5;
 }
@@ -161,7 +162,8 @@ input {
 .footer-links a {
     color: #EAF6F6;
     font-size: 25px;
-    margin-right: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .credits {
@@ -174,6 +176,6 @@ input {
 .copyright {
     color: #EAF6F6;
     text-align: center;
-    font-size: 0.9em;
-    padding-top: 10px;
+    font-size: 15px;
+    padding-top: 5px;
 }

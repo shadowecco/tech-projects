@@ -77,13 +77,18 @@ blockquote {
 /* Footer */
 
 .footer {
-    position: static;
-    width: auto;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-top: 5%;
+    text-align: center;
     background-color: green;
 }
 
 .footer-links {
     display: inline-block;
+    text-align: center;
+    font-size: 25px;
     position: relative;
     z-index: 5;
 }
@@ -91,12 +96,13 @@ blockquote {
 .footer-links a {
     color: #fff;
     font-size: 25px;
-    margin-right: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .copyright {
     color: #fff;
     text-align: center;
-    font-size: 0.75em;
-    padding-top: 10px;
+    font-size: 15px;
+    padding-top: 5px;
 }

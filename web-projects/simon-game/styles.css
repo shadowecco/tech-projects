@@ -56,6 +56,9 @@ body {
 /* Footer */
 
 footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     margin-top: 5%;
     font-family: 'Press Start 2P', cursive;
     color: #EEEEEE;
@@ -72,11 +75,13 @@ footer {
 
 .footer-links a {
     color: #EEEEEE;
-    margin-right: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .copyright {
     color: #EEEEEE;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 5px;
+    font-size: 15px;
 }

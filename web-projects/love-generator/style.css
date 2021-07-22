@@ -131,7 +131,7 @@ input {
 /* Footer */
 
 .footer {
-    padding-top: 10px;
+    position: absolute;
     bottom: 0;
     width: 100%;
     margin-top: 5%;
@@ -143,6 +143,7 @@ input {
 
 .footer-links {
     display: inline-block;
+    text-align: center;
     position: relative;
     z-index: 5;
 }
@@ -150,7 +151,8 @@ input {
 .footer-links a {
     color: #EAF6F6;
     font-size: 25px;
-    margin-right: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .credits {
@@ -164,5 +166,5 @@ input {
     color: #EAF6F6;
     text-align: center;
     font-size: 0.9em;
-    padding-top: 10px;
+    padding-top: 5px;
 }
