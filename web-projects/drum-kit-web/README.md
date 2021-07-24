@@ -2,7 +2,7 @@
 
 # Drum Kit
 
-[View the page here](https://shadowecco.github.io/portfolio/drum-kit/).
+[View the page here](https://shadowecco.github.io/portfolio/drum-kit-web/).
 
 Playing Drum noises with the button or keyboard.
 

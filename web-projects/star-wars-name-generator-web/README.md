@@ -1,6 +1,6 @@
 # Star Wars Name Generator
 
-[View the page here](https://shadowecco.github.io/portfolio/star-wars-name-generator/).<br />
+[View the page here](https://shadowecco.github.io/portfolio/star-wars-name-generator-web/).<br />
 [Python Version (@replit.com)](https://replit.com/@HelenYates/4-Star-Wars-Name-Generator).<br />
 [Python Version (Code)](https://github.com/shadowecco/tech-projects/tree/main/python-projects/star-wars-name-generator).
 

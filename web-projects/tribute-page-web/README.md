@@ -1,7 +1,7 @@
 A Pen created on CodePen.io.
 
 [My CodePen Link](https://codepen.io/shadow_ecco/pen/zYqdqQN).<br />
-[View the page here](https://shadowecco.github.io/portfolio/tribute-page/).
+[View the page here](https://shadowecco.github.io/portfolio/tribute-page-web/).
 
 In response to the challenge:
 

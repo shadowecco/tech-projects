@@ -1,6 +1,6 @@
 # Quote Generator
 
-[View the page here](https://shadowecco.github.io/portfolio/quote-generator/).
+[View the page here](https://shadowecco.github.io/portfolio/quote-generator-web/).
 
 Generates a random quote
 

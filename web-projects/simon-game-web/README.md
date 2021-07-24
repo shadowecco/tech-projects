@@ -2,7 +2,7 @@
 
 # Simon
 
-[View the page here](https://shadowecco.github.io/portfolio/simon-game/).
+[View the page here](https://shadowecco.github.io/portfolio/simon-game-web/).
 
 Pressing the colours in the correct sequence. One wrong move ends the game.
 

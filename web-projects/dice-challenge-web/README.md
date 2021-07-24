@@ -2,7 +2,7 @@
 
 # Dice Game
 
-[View the page here](https://shadowecco.github.io/portfolio/dice-challenge/).
+[View the page here](https://shadowecco.github.io/portfolio/dice-challenge-web/).
 
 Refresh the page to make two dice roll. The player with the highest dice roll wins!
 
