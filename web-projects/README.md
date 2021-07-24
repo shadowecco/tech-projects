@@ -7,7 +7,7 @@ These projects are to showcase web developments in terms of
 * Javascript
 * Bootstrap
 
-Projects can be viewed at my [Projects Website](http://www.thebluefish.com/portfolio/).
+Projects can be viewed at my [Projects Website]().
 
 **1. Chadwick Boseman Tribute Page (HTML/CSS)**
 
