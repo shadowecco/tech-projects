@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+body {
+  text-align: center;
+  background-color: #011F3F;
+  font-family: "Press Start 2P", cursive;
+}
+
+.github-button {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#level-title {
+  font-family: "Press Start 2P", cursive;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 2.5rem;
+  color: #FEF2BF;
+}
+
+.row {
+  margin-bottom: 0px;
+}
+
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+}
+
+.simon-btn {
+  margin: 25px;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border: 10px solid black;
+  border-radius: 20%;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.pressed {
+  -webkit-box-shadow: 0 0 20px white;
+          box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+/* Footer */
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-top: 5%;
+  font-family: "Roboto", sans-serif;
+  color: #EEEEEE;
+  text-align: center;
+}
+
+.footer-links {
+  display: inline-block;
+  text-align: center;
+  font-size: 25px;
+  position: relative;
+  z-index: 5;
+}
+
+.footer-links a {
+  color: #EEEEEE;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.copyright {
+  color: #EEEEEE;
+  text-align: center;
+  padding-top: 5px;
+  font-size: 15px;
+}
+/*# sourceMappingURL=styles.css.map */

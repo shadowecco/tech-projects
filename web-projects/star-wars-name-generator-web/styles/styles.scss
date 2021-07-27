@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import "./_variables.scss";
 
 html {
     box-sizing: border-box;
@@ -7,11 +7,11 @@ html {
 body {
     margin: 0;
     height: 100vh;
-    background-color:#000;
-    background-image: url("images/star-wars.jpg");
+    background-color:$space;
+    background-image: url(#{$images}/star-wars-cave-by-cade-roberts.jpg);
     background-repeat: no-repeat;
-    font-family: 'Space Mono', monospace;
-    color: #fff;
+    font-family: $spacefont;
+    color: $star;
     background-size: 100%;
     font-weight: 700;
     text-align: center;
@@ -23,15 +23,17 @@ body {
 
 
 .github-button {
+    font-family: $gitfont;
+    font-size: $footercredit;
     margin-bottom: 30px;
 }
 
 a {
-    color: #fff;
+    color: $star;
 }
 
 a:visited {
-    color: #fff;
+    color: $star;
 }
 
 
@@ -131,10 +133,10 @@ input {
 .star-wars-btn {
     margin-top: 20px;
     font-size: 25px;
-    font-family: 'Space Mono', monospace;
-    background-color: white;
+    font-family: $spacefont;
+    background-color: star;
     border-radius: 12px;
-    color: black;
+    color: $space;
     border: 1px solid;
 }
 #star-wars-name,
@@ -148,6 +150,8 @@ input {
 
 .footer {
     position: absolute;
+    font-family: $gitfont;
+    color: $offstar;
     bottom: 0;
     width: 100%;
     margin-top: 5%;
@@ -164,22 +168,19 @@ input {
 }
 
 .footer-links a {
-    color: #EAF6F6;
-    font-size: 25px;
+    font-size: $footerlinks;
     padding-left: 10px;
     padding-right: 10px;
 }
 
 .credits {
-    color: #EAF6F6;
     text-align: center;
-    font-size: 0.9em;
+    font-size: $footercredit;
     padding: 5px;
 }
 
 .copyright {
-    color: #EAF6F6;
     text-align: center;
-    font-size: 15px;
+    font-size: $footercopyright;
     padding-top: 5px;
 }

@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+body {
+  background-color: #393E46;
+  font-family: "Lobster", cursive;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.github-button {
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.dice {
+  text-align: center;
+  display: inline-block;
+}
+
+h1 {
+  font-family: "Lobster", cursive;
+  margin: 30px;
+  text-shadow: 5px 0 #232931;
+  font-weight: bold;
+  font-size: 3rem;
+  color: #4ECCA3;
+}
+
+#winner {
+  font-family: "Lobster", cursive;
+  text-align: center;
+  font-size: 2rem;
+  color: #4ECCA3;
+}
+
+p {
+  font-family: "Lobster", cursive;
+  font-size: 1.5rem;
+  color: #4ECCA3;
+}
+
+img {
+  width: 80%;
+}
+
+/* Footer */
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-top: 5%;
+  font-family: "Lobster", cursive;
+  color: #EEEEEE;
+  text-align: center;
+}
+
+.footer-links {
+  display: inline-block;
+  text-align: center;
+  font-size: 25px;
+  position: relative;
+  z-index: 5;
+}
+
+.footer-links a {
+  color: #EEEEEE;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.copyright {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  color: #EEEEEE;
+  text-align: center;
+  padding-top: 5px;
+}
+/*# sourceMappingURL=styles.css.map */

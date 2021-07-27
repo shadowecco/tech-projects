@@ -9,8 +9,10 @@ Refresh the page to make two dice roll. The player with the highest dice roll wi
 Created on Visual Studio Code with:
 
 - HTML
-- CSS
+- CSS/Sass*
 - Javascript
--Jquery
+- Jquery
 
 (Bootstrap was added later to add a "View Button" as well as tweak a few other features. The main coding styles are stated above)
+
+*(Sass was included later but the main focus is on the CSS.)

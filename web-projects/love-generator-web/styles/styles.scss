@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Loved+by+the+King&family=Lovers+Quarrel&display=swap');
+@import "./_variables.scss";
 
 html {
     box-sizing: border-box;
@@ -7,11 +7,11 @@ html {
 body {
     margin: 0;
     height: 100vh;
-    background-color: red;
-    background-image: url("images/love-heart.png");
+    background-color: $heart;
+    background-image: url(#{$images}/love-heart-by-jamie-street.png);
     background-repeat: no-repeat;
     color: #fff;
-    font-family: 'Loved by the King', cursive;
+    font-family: $lovefont;
     background-size: 100%;
     font-weight: 700;
     text-align: center;
@@ -22,24 +22,26 @@ body {
 }
 
 .github-button {
-    background-color: red;
+    font-family: $gitfont;
+    background-color: $heart;
+    font-size: $footer;
     margin-top: 0px;
     margin-bottom: 30px;
 }
 
 a {
-    color: #fff;
+    color: $snow;
 }
 
 a:visited {
-    color: #fff;
+    color: $snow;
 }
 
 
 /* Love Container */
 
 .love-container {
-    background: rgba(255, 0, 0, 0.5);
+    background: $shinyheart;
     text-align: center;
     width: 700px;
     padding-top: 10px;
@@ -47,12 +49,12 @@ a:visited {
 }
 
 .title {
-    font-size: 3rem;
+    font-size: $title;
     padding-bottom: 10px;
 }
 
 .subtitle {
-    font-size: 2rem;
+    font-size: $subtitle;
     padding-bottom: 20px;
 }
 
@@ -115,7 +117,7 @@ input {
 .crush-name {
     margin: 0px;
     text-align: center;
-    font-size: 30px;
+    font-size: $name;
 }
 
 .love-btn {
@@ -138,12 +140,13 @@ input {
 
 .footer {
     position: absolute;
+    font-family: $gitfont;
     bottom: 0;
     width: 100%;
     margin-top: 5%;
-    font-size: 15px;
+    font-size: $footer;
     text-align: center;
-    background: rgba(255, 0, 0, 0.5);
+    background: $shinyheart;
     position: absolute;
 }
 
@@ -155,22 +158,22 @@ input {
 }
 
 .footer-links a {
-    color: #EAF6F6;
-    font-size: 25px;
+    color: $offwhite;
+    font-size: $footerlinks;
     padding-left: 10px;
     padding-right: 10px;
 }
 
 .credits {
-    color: #EAF6F6;
+    color: $offwhite;
     text-align: center;
-    font-size: 0.9em;
+    font-size: $footertext;
     padding: 5px;
 }
 
 .copyright {
-    color: #EAF6F6;
+    color: $offwhite;
     text-align: center;
-    font-size: 0.9em;
+    font-size: $footertext;
     padding-top: 5px;
 }

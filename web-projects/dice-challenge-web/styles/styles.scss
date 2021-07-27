@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lobster&display=swap');
+@import "./_variables.scss";
+
+body {
+    background-color: $bodyColour;  
+    font-family: $funfont;
+}
+
 .container {
     width: 70%;
     margin: auto;
@@ -6,6 +12,8 @@
 }
 
 .github-button {
+    font-size: $footerLinks;
+    font-family: $gitfont;
     margin-top: 30px;
     margin-bottom: 30px;
 }
@@ -15,31 +23,26 @@
     display: inline-block;
 }
 
-body {
-    background-color: #393E46;
-    font-family: 'Lobster', cursive;
-}
-
 h1 {
-    font-family: 'Lobster', cursive;
+    font-family: $funfont;
     margin: 30px;
     text-shadow: 5px 0 #232931;
     font-weight: bold;
-    font-size: 3rem;
-    color: #4ECCA3;
+    font-size: $header;
+    color: $funColour;
 }
 
 #winner {
-    font-family: 'Indie Flower', cursive;
+    font-family: $funfont;
     text-align: center;
-    font-size: 2rem;
-    color: #4ECCA3;
+    font-size: $winner;
+    color: $funColour;
 }
 
 p {
-    font-family: 'Indie Flower', cursive;
-    font-size: 1.5rem;
-    color: #4ECCA3;
+    font-family: $funfont;
+    font-size: $player;
+    color: $funColour;
 }
 
 img {
@@ -50,33 +53,33 @@ img {
 /* Footer */
 
 footer {
-
     position: absolute;
     bottom: 0;
     width: 100%;
     margin-top: 5%;
-    font-family: 'Indie Flower', cursive;
-    color: #EEEEEE;
+    font-family: $funfont;
+    color: $footerColour;
     text-align: center;
 }
 
 .footer-links {
     display: inline-block;
     text-align: center;
-    font-size: 25px;
+    font-size: $footerLinks;
     position: relative;
     z-index: 5;
 }
 
 .footer-links a {
-    color: #EEEEEE;
+    color: $footerColour;
     padding-left: 10px;
     padding-right: 10px;
 }
 
 .copyright {
-    font-size: 15px;
-    color: #EEEEEE;
+    font-family: $gitfont;
+    font-size: $footerCopyright;
+    color: $footerColour;
     text-align: center;
     padding-top: 5px;
 }

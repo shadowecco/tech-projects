@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Loved+by+the+King&family=Lovers+Quarrel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: #e91b1b;
+  background-image: url(../images/love-heart-by-jamie-street.png);
+  background-repeat: no-repeat;
+  color: #fff;
+  font-family: "Loved by the King", cursive;
+  background-size: 100%;
+  font-weight: 700;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.github-button {
+  font-family: "Roboto", sans-serif;
+  background-color: #e91b1b;
+  font-size: 15px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+a {
+  color: #fff;
+}
+
+a:visited {
+  color: #fff;
+}
+
+/* Love Container */
+.love-container {
+  background: rgba(255, 0, 0, 0.5);
+  text-align: center;
+  width: 700px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.title {
+  font-size: 3rem;
+  padding-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 2rem;
+  padding-bottom: 20px;
+}
+
+/* Form */
+form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 200px 1fr;
+      grid-template-columns: 200px 1fr;
+  grid-gap: 16px;
+  padding-left: 100px;
+  padding-bottom: 20px;
+}
+
+input[type=text],
+select {
+  width: 50%;
+  height: 20px;
+  margin: 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+label {
+  float: left;
+  width: 200px;
+  padding-right: 24px;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+}
+
+button {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+}
+
+/* Name Text Label */
+.name-text {
+  padding-left: 125px;
+  text-align: left;
+}
+
+/* Name Text Area */
+input {
+  float: left;
+  width: 500px;
+  height: 30px;
+}
+
+.your-name {
+  margin: 0px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.crush-name {
+  margin: 0px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.love-btn {
+  margin-top: 40px;
+  font-size: 40px;
+  background-color: white;
+  border-radius: 12px;
+  color: black;
+  border: 1px solid;
+}
+
+#love-score,
+#love-comment {
+  margin-top: 5px;
+  font-size: 1.5rem;
+}
+
+/* Footer */
+.footer {
+  position: absolute;
+  font-family: "Roboto", sans-serif;
+  bottom: 0;
+  width: 100%;
+  margin-top: 5%;
+  font-size: 15px;
+  text-align: center;
+  background: rgba(255, 0, 0, 0.5);
+  position: absolute;
+}
+
+.footer-links {
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  z-index: 5;
+}
+
+.footer-links a {
+  color: #EAF6F6;
+  font-size: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.credits {
+  color: #EAF6F6;
+  text-align: center;
+  font-size: 0.9em;
+  padding: 5px;
+}
+
+.copyright {
+  color: #EAF6F6;
+  text-align: center;
+  font-size: 0.9em;
+  padding-top: 5px;
+}
+/*# sourceMappingURL=styles.css.map */

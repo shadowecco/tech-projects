@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #ffffff;
+  background-image: url("");
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.github-button {
+  vertical-align: text-top;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.quote-container {
+  width: auto;
+  max-width: 900px;
+  padding: 20px 30px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.quote-text {
+  font-size: 2.3rem;
+}
+
+.long-quote {
+  font-size: 2.3rem;
+}
+
+.fa-quote-left {
+  font-size: 2.3rem;
+}
+
+.quote-author {
+  margin: 15px 0;
+  font-size: 2.3rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+button {
+  cursor: pointer;
+  font-size: 1.2rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 10px;
+  color: #ffffff;
+  background: #333;
+  outline: none;
+  padding: 0.5rem 1.8rem;
+  -webkit-box-shadow: 0 0.3rem rgba(121, 121, 121, 0.65);
+          box-shadow: 0 0.3rem rgba(121, 121, 121, 0.65);
+}
+
+button:hover {
+  -webkit-filter: brightness(110%);
+          filter: brightness(110%);
+}
+
+button:active {
+  -webkit-transform: translate(0, 0.3rem);
+          transform: translate(0, 0.3rem);
+  -webkit-box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
+          box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
+}
+
+.twitter-button:hover {
+  color: #38a1f3;
+}
+
+.fa-twitter {
+  font-size: 1.5rem;
+}
+
+/* Footer */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-top: 5%;
+  font-family: "Roboto", sans-serif;
+  background-color: #000;
+  color: #EEEEEE;
+  text-align: center;
+}
+
+.footer-links {
+  display: inline-block;
+  text-align: center;
+  font-size: 25px;
+  position: relative;
+  z-index: 5;
+}
+
+.footer-links a {
+  color: #EEEEEE;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.copyright {
+  font-size: 15px;
+  color: #EEEEEE;
+  text-align: center;
+  padding-top: 5px;
+}
+
+/* Loader */
+.loader {
+  position: fixed;
+  top: 35%;
+  left: 45%;
+  border: 16px solid #EEEEEE;
+  border-top: 16px solid #333;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+/* Media Query: Tablet or Smaller */
+@media screen and (max-width: 1000px) {
+  .quote-container {
+    margin: auto 10px;
+  }
+  .quote-text {
+    font-size: 2.5rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

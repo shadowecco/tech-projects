@@ -1,21 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import "./_variables.scss";
+
 body {
     text-align: center;
-    background-color: #011F3F;
-    font-family: 'Press Start 2P', cursive;
+    background-color: $bodybackground;
+    font-family: $funfont;
 }
 
 .github-button {
+    font-family: $gitfont;
+    font-size: $footerlinks;
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
 #level-title {
-    font-family: 'Press Start 2P', cursive;
+    font-family: $funfont;
     margin-top: 50px;
     margin-bottom: 50px;
-    font-size: 2.5rem;
-    color: #FEF2BF;
+    font-size: $title;
+    color: $titlecolour;
 }
 
 .row {
@@ -38,29 +41,29 @@ body {
 }
 
 .game-over {
-    background-color: red;
+    background-color: $redbutton;
     opacity: 0.8;
 }
 
 .red {
-    background-color: red;
+    background-color: $redbutton;
 }
 
 .green {
-    background-color: green;
+    background-color: $greenbutton;
 }
 
 .blue {
-    background-color: blue;
+    background-color: $bluebutton;
 }
 
 .yellow {
-    background-color: yellow;
+    background-color: $yellowbutton;
 }
 
 .pressed {
     box-shadow: 0 0 20px white;
-    background-color: grey;
+    background-color: $pressed;
 }
 
 
@@ -71,28 +74,28 @@ footer {
     bottom: 0;
     width: 100%;
     margin-top: 5%;
-    font-family: 'Press Start 2P', cursive;
-    color: #EEEEEE;
+    font-family: $gitfont;
+    color: $offwhite;
     text-align: center;
 }
 
 .footer-links {
     display: inline-block;
     text-align: center;
-    font-size: 25px;
+    font-size: $footerlinks;
     position: relative;
     z-index: 5;
 }
 
 .footer-links a {
-    color: #EEEEEE;
+    color: $offwhite;
     padding-left: 10px;
     padding-right: 10px;
 }
 
 .copyright {
-    color: #EEEEEE;
+    color: $offwhite;
     text-align: center;
     padding-top: 5px;
-    font-size: 10px;
+    font-size: $footercopyright;
 }
