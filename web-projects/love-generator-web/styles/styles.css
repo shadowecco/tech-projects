@@ -9,7 +9,7 @@ body {
   margin: 0;
   height: 100vh;
   background-color: #e91b1b;
-  background-image: url(../images/love-heart-by-jamie-street.png);
+  background-image: url(../images/love-heart-by-jamie-street-unsplash.png);
   background-repeat: no-repeat;
   color: #fff;
   font-family: "Loved by the King", cursive;
@@ -67,7 +67,7 @@ a:visited {
 }
 
 /* Form */
-form {
+.love-form {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 200px 1fr;
@@ -139,6 +139,7 @@ input {
 
 #love-score,
 #love-comment {
+  font-size: 3rem;
   margin-top: 5px;
   font-size: 1.5rem;
 }
@@ -152,7 +153,7 @@ input {
   margin-top: 5%;
   font-size: 15px;
   text-align: center;
-  background: rgba(255, 0, 0, 0.5);
+  background: #e91b1b;
   position: absolute;
 }
 

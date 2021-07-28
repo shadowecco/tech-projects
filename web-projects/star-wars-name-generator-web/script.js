@@ -1,7 +1,9 @@
-document.getElementById("star-wars-btn").onclick = function() {
+const spaceForm = document.getElementById('starwars-form')
+const spaceButton = document.getElementById('star-wars-btn')
+const spaceName = document.getElementById("star-wars-name")
+const spaceAlliance = document.getElementById("star-wars-alliance")
 
-    const allianceList = ["Jedi", "Sith", "Neutral", "Rebel Alliance", "Galactic Empire", "Resistance", "First Order"]
-    var ranAlliance = allianceList[Math.floor(Math.random() * allianceList.length)];
+spaceButton.onclick = function() {
 
     var firstName = document.getElementById('first-name').value;
     var lastName = document.getElementById('last-name').value;
@@ -16,11 +18,17 @@ document.getElementById("star-wars-btn").onclick = function() {
     var swFirstName = subLastName + subFirstName
     var swLastName = subMaidenName + subBirthTown
 
-    document.getElementById("star-wars-name").innerText = "Your Star Wars Name is " + swFirstName[0].toUpperCase() + swFirstName.substring(1) + " " + swLastName[0].toUpperCase() + swLastName.substring(1)
+    const allianceList = ["Jedi", "Sith", "Neutral", "Rebel Alliance", "Galactic Empire", "Resistance", "First Order"]
+    var ranAlliance = allianceList[Math.floor(Math.random() * allianceList.length)];
+
+    spaceForm.remove();
+    spaceButton.remove();
+
+    spaceName.innerText = "Your Star Wars Name is " + swFirstName[0].toUpperCase() + swFirstName.substring(1) + " " + swLastName[0].toUpperCase() + swLastName.substring(1)
 
     if (ranAlliance == "Neutral") {
-        document.getElementById("star-wars-alliance").innerText = "Your alliance is " + ranAlliance;
+        spaceAlliance.innerText = "Your alliance is " + ranAlliance;
     } else {
-        document.getElementById("star-wars-alliance").innerText = "Your alliance is with the " + ranAlliance;
+        spaceAlliance.innerText = "Your alliance is with the " + ranAlliance;
     }
 }; 
