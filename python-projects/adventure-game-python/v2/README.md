@@ -2,6 +2,8 @@
 
 # Text-based Adventure Game v2
 
+Currently on-going
+
 This was a small cute little project started by FreeCodeCamp but the original file focused on input as well as 
 conditions. 
 
@@ -11,14 +13,13 @@ Video tutorial can be found [here](https://www.youtube.com/watch?v=_ZqAVck-WeM)
 
 Original Python file can be found [here](https://techwithtim.net/code/)   
 
-[Game here (@replit.com)](https://replit.com/@HelenYates/Adventure-Game-v2).<br />
+[My version here (@replit.com)](https://replit.com/@HelenYates/Adventure-Game-v2).<br />
 
-[View web version here]().
+[View my (ongoing) web version here](https://shadowecco.github.io/portfolio/dice-challenge-web/).
 
-I am expanding it to include imported programs and functions. This is intended to be an ongoing project 
-adding new paths and choices for the player. I also intend to make it as fool-proof as possible. Usually in python 
-programs, when someone types in something that is not a valid choice, it tends to quit the game. I intend to create a 
-loop for invalid choices. 
+I am expanding it to include imported programs and functions. 
+
+This is intended to be an ongoing project adding new paths and choices for the player. I also intend to make it as fool-proof as possible. Usually in python programs, when someone types in something that is not a valid choice, it tends to quit the game. I intend to create a loop for invalid choices. 
 
 This is an on-off project so it will not be a regular process. Just something to test out any features of Python as I 
 discover them.

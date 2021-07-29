@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Bad+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap");
+.magicBgColour,
+.magicBgColour a {
+  color: #a00f88;
+  font-weight: bold;
+}
+
+.fireBgColour,
+.fireBgColour a {
+  color: #f36b00;
+  font-weight: bold;
+}
+
+.itemsBgColour,
+.itemsBgColour a {
+  color: white;
+  font-weight: bold;
+}
+
+/* Google Fonts */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url(../images/photo-by-johannes-plenio-unsplash.jpg);
+  font-family: "Merienda", cursive;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  background-color: #333;
+}
+
+.github-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.github-button {
+  font-family: "Roboto", sans-serif;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+/* Quest Container */
+#header {
+  font-family: "Bad Script", cursive;
+  text-align: center;
+  color: white;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  width: 800px;
+  font-family: "Merienda", cursive;
+  max-width: 80%;
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 10px 2px;
+          box-shadow: 0 0 10px 2px;
+}
+
+#title-container {
+  position: absolute;
+  top: 10px;
+  width: 800px;
+  max-width: 80%;
+  border-radius: 5px;
+}
+
+.btn-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[2];
+      grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn {
+  background-color: #00aaff;
+  border: 1px solid #006699;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: white;
+  outline: none;
+}
+
+.btn:hover {
+  border-color: black;
+}
+
+.begin-btn,
+.start-btn {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+.controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hide {
+  display: none;
+}
+
+/* Footer */
+.footer {
+  background-color: rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  text-align: center;
+  padding: 10px 0 20px;
+}
+
+.footer-links,
+.footer-links a {
+  color: #EAF6F6;
+  font-size: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.credits {
+  color: #EAF6F6;
+  text-align: center;
+  font-size: 0.9em;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+.credits a {
+  color: #EAF6F6;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+.copyright {
+  color: #EAF6F6;
+  text-align: center;
+  font-size: 0.7em;
+  padding-top: 5px;
+}
+/*# sourceMappingURL=styles.css.map */

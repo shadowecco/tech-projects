@@ -1,0 +1,31 @@
+// Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap');
+// Font Variables
+$adventurefont: 'Merienda',
+cursive;
+$headerfont: 'Bad Script',
+cursive;
+$gitfont: 'Roboto',
+sans-serif;
+// Font Size Variables
+$btn: 1.5rem;
+$footerlinks: 25px;
+$footercredits: 0.9em;
+$footercopyright: 0.7em;
+// Variables
+$snow: white;
+$night: black;
+$offwhite: #EAF6F6;
+$magic: rgb(160,
+15,
+136);
+$fire: rgb(243,
+107,
+0);
+// Mixins
+@mixin container {
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(5px);
+}

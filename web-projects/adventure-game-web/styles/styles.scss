@@ -1,0 +1,146 @@
+@import "./_variables.scss";
+@import "./_footervariables.scss";
+
+/* Google Fonts */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background-image: url(../images/photo-by-johannes-plenio-unsplash.jpg);
+    font-family: $adventurefont;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    color: $snow;
+    background-color: #333;
+}
+
+.github-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.github-button {
+    font-family: $gitfont;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+
+/* Quest Container */
+
+#header {
+    font-family: $headerfont;
+    text-align: center;
+    color: $snow;
+}
+
+.container {
+    @include container;
+    width: 800px;
+    font-family: $adventurefont;
+    max-width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 2px;
+}
+
+#title-container {
+    position: absolute;
+    top: 10px;
+    width: 800px;
+    max-width: 80%;
+    border-radius: 5px;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: hsl(200, 100%, 50%);
+    border: 1px solid hsl(200, 100%, 30%);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: $snow;
+    outline: none;
+}
+
+.btn:hover {
+    border-color: $night;
+}
+
+.begin-btn,
+.start-btn {
+    font-size: $btn;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
+
+
+/* Footer */
+
+.footer {
+    @include container;
+    font-family: $gitfont;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    text-align: center;
+    padding: 10px 0 20px;
+}
+
+.footer-links,
+.footer-links a {
+    color: $offwhite;
+    font-size: $footerlinks;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.credits {
+    color: $offwhite;
+    text-align: center;
+    font-size: $footercredits;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.credits a {
+    color: $offwhite;
+    text-align: center;
+    font-size: $footercredits;
+}
+
+.copyright {
+    color: $offwhite;
+    text-align: center;
+    font-size: $footercopyright;
+    padding-top: 5px;
+}

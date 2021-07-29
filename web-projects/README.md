@@ -4,7 +4,9 @@ These projects are to showcase web developments in terms of
 
 * HTML
 * CSS
+* SASS
 * Javascript
+* JQuery
 * Bootstrap
 
 Projects can be viewed at my [Projects Website]().
@@ -38,6 +40,10 @@ Generates a random quote
 Generates a random love score
 
 **7. Star Wars Generator (HTML/CSS/Javascript/)**
+
+Generates a "Star Wars" style based on certain conditions. 
+
+**8. Web Adventure Game (HTML/CSS/SASS/Bootstrap/Javascript/JQuery)**
 
 Generates a "Star Wars" style based on certain conditions. 
 
