@@ -2,67 +2,37 @@ let state = {}
 
 // Game Path
 
-const gameArray = [{
+const textNodes = [{
         id: 1,
-        text: 'Now choose a rank',
+        text: 'You see a bag and some items on a table You pick up the bag and:',
         options: [{
-                text: 'Knight',
-                setState: {
-                    Knight: true
-                },
+                text: 'beans',
+                setState: { beans: true },
                 nextText: 2
             },
             {
-                text: 'Lady',
-                setState: {
-                    Lady: true
-                },
+                text: 'apple',
+                setState: { apple: true },
                 nextText: 2
             },
             {
-                text: 'Lord',
-                setState: {
-                    Lord: true
-                },
+                text: 'sword',
+                setState: { sword: true },
                 nextText: 2
             },
             {
-                text: 'Squire',
-                setState: {
-                    Squire: true
-                },
-                nextText: 2
-            },
-            {
-                text: 'Villager',
-                setState: {
-                    Villager: true
-                },
-                nextText: 2
-            },
-            {
-                text: 'Witch',
-                setState: {
-                    Witch: true
-                },
-                nextText: 2
-            },
-            {
-                text: 'Wizard',
-                setState: {
-                    Wizard: true
-                },
+                text: 'wand',
+                setState: { wand: true },
                 nextText: 2
             }
         ]
     },
     {
         id: 2,
-        text: 'Greetings weary traveller',
+        text: 'You leave the house.',
         options: [{
-            text: 'Start',
-            nextText: 3
+            text: 'Restart',
+            nextText: -1
         }]
-    },
-
+    }
 ]

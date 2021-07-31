@@ -13,6 +13,12 @@
   font-weight: bold;
 }
 
+.bluefireBgColour,
+.bluefiresBgColour a {
+  color: #f33100;
+  font-weight: bold;
+}
+
 .itemsBgColour,
 .itemsBgColour a {
   color: white;
