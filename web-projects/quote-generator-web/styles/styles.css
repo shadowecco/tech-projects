@@ -94,7 +94,6 @@ button:active {
   font-size: 1.5rem;
 }
 
-/* Footer */
 .footer {
   position: absolute;
   bottom: 0;
@@ -127,7 +126,6 @@ button:active {
   padding-top: 5px;
 }
 
-/* Loader */
 .loader {
   position: fixed;
   top: 35%;
@@ -163,7 +161,6 @@ button:active {
   }
 }
 
-/* Media Query: Tablet or Smaller */
 @media screen and (max-width: 1000px) {
   .quote-container {
     margin: auto 10px;

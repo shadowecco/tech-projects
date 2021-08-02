@@ -1,7 +1,11 @@
+// DOM Elements
+
 const spaceForm = document.getElementById('starwars-form')
 const spaceButton = document.getElementById('star-wars-btn')
 const spaceName = document.getElementById("star-wars-name")
 const spaceAlliance = document.getElementById("star-wars-alliance")
+
+// Function to generate Star Wars name
 
 spaceButton.onclick = function() {
 
@@ -31,4 +35,4 @@ spaceButton.onclick = function() {
     } else {
         spaceAlliance.innerText = "Your alliance is with the " + ranAlliance;
     }
-}; 
+};

@@ -1,93 +1,94 @@
 @import "./_variables.scss";
-
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
-
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
+// Body 
 body {
-  margin: 0;
-  min-height: 100vh;
-  background-color: $bodybackground;
-  background-image: url("");
-  color: $dark;
-  font-family: $quotefont;
-  font-weight: 700;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
- 
+    margin: 0;
+    min-height: 100vh;
+    background-color: $bodybackground;
+    background-image: url("");
+    color: $dark;
+    font-family: $quotefont;
+    font-weight: 700;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
+// Github Container
 .github-button {
-  vertical-align: text-top;
-  font-family: $gitfont;
-  font-size: $copyright;
+    vertical-align: text-top;
+    font-family: $gitfont;
+    font-size: $copyright;
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
+// Quote Container
 .quote-container {
-  width: auto;
-  max-width: 900px;
-  padding: 20px 30px;
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.4);
-  box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
+    width: auto;
+    max-width: 900px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
 .quote-text {
-  font-size: $longquote;
+    font-size: $longquote;
 }
 
 .long-quote {
-  font-size: $longquote;
+    font-size: $longquote;
 }
 
 .fa-quote-left {
-  font-size: $longquote;
+    font-size: $longquote;
 }
 
 .quote-author {
-  margin: 15px 0;
-  font-size: $longquote;
-  font-weight: 400;
-  font-style: italic;
+    margin: 15px 0;
+    font-size: $longquote;
+    font-weight: 400;
+    font-style: italic;
 }
 
+// Quote Button
 button {
-  cursor: pointer;
-  font-size: $button;
-  height: 2.5rem;
-  border: none;
-  border-radius: 10px;
-  color: $bodybackground;
-  background: $buttonbackground;
-  outline: none;
-  padding: 0.5rem 1.8rem;
-  box-shadow: 0 0.3rem rgba(121, 121, 121, 0.65);
+    cursor: pointer;
+    font-size: $button;
+    height: 2.5rem;
+    border: none;
+    border-radius: 10px;
+    color: $bodybackground;
+    background: $buttonbackground;
+    outline: none;
+    padding: 0.5rem 1.8rem;
+    box-shadow: 0 0.3rem rgba(121, 121, 121, 0.65);
 }
 
 button:hover {
-  filter: brightness(110%);
+    filter: brightness(110%);
 }
 
 button:active {
-  transform: translate(0, 0.3rem);
-  box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
+    transform: translate(0, 0.3rem);
+    box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
 }
 
+// Twitter Button
 .twitter-button:hover {
-  color: $twitter;
+    color: $twitter;
 }
 
 .fa-twitter {
-  font-size: $twitterbtn; 
+    font-size: $twitterbtn;
 }
 
-/* Footer */
-
+// Footer
 .footer {
     position: absolute;
     bottom: 0;
@@ -120,31 +121,34 @@ button:active {
     padding-top: 5px;
 }
 
-/* Loader */
+// Loader
 .loader {
-  position: fixed;
-  top: 35%;
-  left: 45%;
-  border: 16px solid $offwhite; 
-  border-top: 16px solid $buttonbackground; 
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  animation: spin 2s linear infinite;
+    position: fixed;
+    top: 35%;
+    left: 45%;
+    border: 16px solid $offwhite;
+    border-top: 16px solid $buttonbackground;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
-/* Media Query: Tablet or Smaller */
+// Media Query: Tablet or Smaller
 @media screen and (max-width: 1000px) {
-  .quote-container {
-    margin: auto 10px;
-  }
-
-  .quote-text {
-    font-size: 2.5rem;
-  }
+    .quote-container {
+        margin: auto 10px;
+    }
+    .quote-text {
+        font-size: 2.5rem;
+    }
 }

@@ -1,13 +1,13 @@
 @import "./_variables.scss";
-
 html {
     box-sizing: border-box;
 }
 
+// Body
 body {
     margin: 0;
     height: 100vh;
-    background-color:$space;
+    background-color: $space;
     background-image: url(#{$images}/star-wars-cave-by-cade-roberts-unsplash.jpg);
     background-repeat: no-repeat;
     font-family: $spacefont;
@@ -21,24 +21,14 @@ body {
     justify-content: center;
 }
 
-
+// Github Container
 .github-button {
     font-family: $gitfont;
     font-size: $footercredit;
     margin-bottom: 30px;
 }
 
-a {
-    color: $star;
-}
-
-a:visited {
-    color: $star;
-}
-
-
-/* Container */
-
+// Name Contiainer
 .container {
     background: rgba(63, 63, 63, 0.5);
     text-align: center;
@@ -56,8 +46,7 @@ a:visited {
     padding-bottom: 20px;
 }
 
-/* Form */
-
+// Name Form
 form {
     display: grid;
     grid-template-columns: 200px 1fr;
@@ -83,23 +72,26 @@ label {
     grid-column: 1 / 2;
 }
 
-
 button {
     grid-column: 2 / 3;
 }
 
+// Links
+a {
+    color: $star;
+}
 
-/* Name Text Label */
+a:visited {
+    color: $star;
+}
 
+// Name Text Label
 .name-text {
     padding-left: 125px;
     text-align: left;
 }
 
-
-/* Name Text Area */
-
-
+// Name Text Area
 input {
     float: left;
     width: 500px;
@@ -130,6 +122,7 @@ input {
     font-size: 30px;
 }
 
+// Star Wars Button
 .star-wars-btn {
     margin-top: 20px;
     font-size: 25px;
@@ -139,15 +132,15 @@ input {
     color: $space;
     border: 1px solid;
 }
+
+// Result
 #star-wars-name,
 #star-wars-alliance {
     margin-top: 5px;
     font-size: 1.2rem;
 }
 
-
-/* Footer */
-
+// Footer
 .footer {
     position: absolute;
     font-family: $gitfont;

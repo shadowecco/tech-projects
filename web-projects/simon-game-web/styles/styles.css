@@ -13,6 +13,12 @@ body {
   margin-bottom: 30px;
 }
 
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+}
+
 #level-title {
   font-family: "Press Start 2P", cursive;
   margin-top: 50px;
@@ -25,10 +31,9 @@ body {
   margin-bottom: 0px;
 }
 
-.container {
-  display: block;
-  width: 50%;
-  margin: auto;
+.game-over {
+  background-color: red;
+  opacity: 0.8;
 }
 
 .simon-btn {
@@ -38,11 +43,6 @@ body {
   width: 200px;
   border: 10px solid black;
   border-radius: 20%;
-}
-
-.game-over {
-  background-color: red;
-  opacity: 0.8;
 }
 
 .red {
@@ -67,7 +67,6 @@ body {
   background-color: grey;
 }
 
-/* Footer */
 footer {
   position: absolute;
   bottom: 0;

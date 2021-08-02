@@ -1,14 +1,13 @@
 @import "./_variables.scss";
 @import "./_footervariables.scss";
-
-/* Google Fonts */
-
+// Google Fonts
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
 
+// Body
 body {
     padding: 0;
     margin: 0;
@@ -27,6 +26,7 @@ body {
     background-color: #333;
 }
 
+// Github Container 
 .github-row {
     display: flex;
     justify-content: center;
@@ -39,9 +39,7 @@ body {
     margin-bottom: 50px;
 }
 
-
-/* Quest Container */
-
+// Quest Container
 #header {
     font-family: $headerfont;
     text-align: center;
@@ -103,9 +101,7 @@ body {
     display: none;
 }
 
-
-/* Footer */
-
+// Footer
 .footer {
     @include container;
     font-family: $gitfont;

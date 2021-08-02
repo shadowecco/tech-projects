@@ -1,30 +1,69 @@
-beginButton.addEventListener('click', playerIntro)
+// Title Elements
 
-nextStepButton.addEventListener('click', setRank)
+const titleElement = $('#title-container')[0]
+const githubElement = $('#github-row')[0]
+const beginBtn = $('#begin-btn')[0]
 
-knightButton.addEventListener('click', setPlayer)
-ladyButton.addEventListener('click', setPlayer)
-lordButton.addEventListener('click', setPlayer)
-squireButton.addEventListener('click', setPlayer)
-villagerButton.addEventListener('click', setPlayer)
-witchButton.addEventListener('click', setPlayer)
-wizardButton.addEventListener('click', setPlayer)
+// Player Elements
 
-startButton.addEventListener('click', startGame)
+const playerElement = $('#player-container')[0]
+const nextStepBtn = $('#class-btn')[0]
+const startElement = $('#start-container')[0]
+const startBtn = $('#start-btn')[0]
+
+// Rank Elements
+
+const rankElement = $('#rank-container')[0]
+const knightBtn = $('#knight-btn')[0]
+const ladyBtn = $('#lady-btn')[0]
+const lordBtn = $('#lord-btn')[0]
+const squireBtn = $('#squire-btn')[0]
+const villagerBtn = $('#villager-btn')[0]
+const witchBtn = $('#witch-btn')[0]
+const wizardBtn = $('#wizard-btn')[0]
+
+// Quest Elements
+
+const questElement = $('#quest-container')[0]
+const textElement = $('#quest-text')[0]
+const optionButtonsElement = $('#option-buttons')[0]
+
+// Footer Elements
+
+const footerElement = $("footer")[0]
+const footerLinks = $("footer")[0].getElementsByTagName("div")[0]
+const footerCopyright = $("footer")[0].getElementsByTagName("p")[0]
+const footerCredit = $("footer")[0].getElementsByTagName("p")[1]
+
+// Buttons - in the order they are clicked to activate functions
+
+beginBtn.addEventListener('click', playerIntro)
+
+nextStepBtn.addEventListener('click', setRank)
+
+knightBtn.addEventListener('click', setPlayer)
+ladyBtn.addEventListener('click', setPlayer)
+lordBtn.addEventListener('click', setPlayer)
+squireBtn.addEventListener('click', setPlayer)
+villagerBtn.addEventListener('click', setPlayer)
+witchBtn.addEventListener('click', setPlayer)
+wizardBtn.addEventListener('click', setPlayer)
+
+startBtn.addEventListener('click', startGame)
+
+// Function for username/playername input
 
 function playerIntro() {
 
-    document.body.style.backgroundImage = magicBg
-    footerCredit.innerHTML = magicFooterCredits
-    footerCredit.className = "magicBgColour"
+    footerschemeMagic()
 
     titleElement.remove();
-    beginButton.classList.add('hide')
+    beginBtn.classList.add('hide')
     footerLinks.remove();
     footerCopyright.remove();
 
     playerElement.style.display = "block";
-    nextStepButton.style.display = "block";
+    nextStepBtn.style.display = "block";
 }
 
 function getName() {
@@ -32,26 +71,26 @@ function getName() {
     return playerName
 }
 
+// Function for rank input
+
 function setRank() {
 
-    document.body.style.backgroundImage = fireBg
-    footerCredit.innerHTML = fireFooterCredits
-    footerCredit.className = "fireBgColour"
+    footerschemeFire()
 
-    nextStepButton.style.display = "none";
+    nextStepBtn.style.display = "none";
     playerElement.style.display = "none";
     rankElement.style.display = "block";
 }
 
+// Game Intro displaying chosen name and rank
+
 function setPlayer() {
 
-    document.body.style.backgroundImage = bluefireBg
-    footerCredit.innerHTML = bluefireFooterCredits
-    footerCredit.className = "fireBgColour"
+    footerschemeblueFire()
 
     rankElement.style.display = "none";
     startElement.style.display = "block";
-    startButton.style.display = "block";
+    startBtn.style.display = "block";
 
     var player_name = getName()
     var player_rank = $(this).val();
@@ -59,15 +98,16 @@ function setPlayer() {
     startElement.innerText = "Welcome to Ravenbrooke, " + player_name + ". The journey will be long and difficult but you can do it. Good luck, young " + player_rank + "!"
 }
 
+// Start Game
+
 function startGame() {
     state = []
     showTextNode(1)
-    document.body.style.backgroundImage = itemsBg
-    footerCredit.innerHTML = itemsFooterCredits
-    footerCredit.className = "itemsColour"
+
+    footerschemeItems()
 
     startElement.style.display = "none";
-    startButton.style.display = "none";
+    startBtn.style.display = "none";
     questElement.style.display = "block";
     textElement.style.display = "block";
 
@@ -93,4 +133,24 @@ function showTextNode(textNodeIndex) {
 
 function showOption(option) {
     return option.requiredState == null || option.requiredState(state)
+}
+
+function selectOption(option) {
+    const nextTextNodeId = option.nextText
+    if (nextTextNodeId <= 0) {
+        return startGame()
+    }
+
+    // Condition so that background images/credits changes in terms of scenario
+
+    if (nextTextNodeId == 99 || nextTextNodeId == 100) {
+        footerschemeMagic()
+    } else if (nextTextNodeId == 97) {
+        footerschemeItems()
+    } else {
+        footerschemeTest()
+    }
+
+    state = Object.assign(state, option.setState)
+    showTextNode(nextTextNodeId)
 }

@@ -5,12 +5,6 @@ body {
   font-family: "Lobster", cursive;
 }
 
-.container {
-  width: 70%;
-  margin: auto;
-  text-align: center;
-}
-
 .github-button {
   font-size: 25px;
   font-family: "Roboto", sans-serif;
@@ -18,9 +12,10 @@ body {
   margin-bottom: 30px;
 }
 
-.dice {
+.container {
+  width: 70%;
+  margin: auto;
   text-align: center;
-  display: inline-block;
 }
 
 h1 {
@@ -45,11 +40,15 @@ p {
   color: #4ECCA3;
 }
 
+.dice {
+  text-align: center;
+  display: inline-block;
+}
+
 img {
   width: 80%;
 }
 
-/* Footer */
 footer {
   position: absolute;
   bottom: 0;

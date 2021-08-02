@@ -6,7 +6,7 @@ const textNodes = [{
         id: 1,
         text: 'You see a bag and some items on a table You pick up the bag and:',
         options: [{
-                text: 'beans',
+                text: 'handful of beans',
                 setState: { beans: true },
                 nextText: 2
             },

@@ -18,34 +18,43 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
 
-    <!-- Font Awesome Icons -->
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
-
     <!-- Stylesheet -->
 
     <link rel="stylesheet" href="styles/styles.css">
 
-    <!-- Javascript -->
+    <!-- JQuery -->
 
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-    <script defer src="js/elements-variables.js"></script>
-    <script defer src="js/variables.js"></script>
+
+    <!-- Javascript -->
+
+    <script defer src="js/footer-variables.js"></script>
     <script defer src="js/functions.js"></script>
     <script defer src="js/story.js"></script>
 
+    <!-- Font Awesome Icons -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
 
 </head>
 
 <body>
 
     <div id="title-container">
+
+        <!-- Github Button -->
+
         <div id="github-row" class="github-row justify-content-center">
-            <a class="btn btn-outline-light btn-lg github-button" id="github-button" href="#"><i
+            <a class="btn btn-outline-light btn-lg github-button" id="github-button" href="https://github.com/shadowecco/tech-projects/tree/main/web-projects/adventure-game-web"><i
                     class="fab fa-github"></i> View Project Code at GitHub</a></div>
+
+        <!-- Header -->
+
         <h1 id="header">Welcome to Ravenbrooke</h1>
         <h1 id="header">Let's Begin our Journey</h1>
     </div>
+
+    <!-- Player Input Container -->
 
     <div class="container">
         <div id="player-container" style="display: none;">
@@ -61,6 +70,8 @@
             </div>
         </div>
 
+        <!-- Rank Input Container -->
+
         <div id="rank-container" style="display: none;">
             <div id="rank-text">Choose your Rank</div>
             <div id="rank-option-buttons" class="btn-grid">
@@ -74,14 +85,20 @@
             </div>
         </div>
 
+        <!-- Player Name and Text Container -->
+
         <div id="start-container" style="display: none;">
             <p id="start-text"></p>
         </div>
+
+        <!-- Buttons -->
 
         <div class="controls">
             <button id="begin-btn" class="begin-btn btn">Let's Begin our Journey</button>
             <button id="start-btn" class="class-btn btn btn-grid btn" style="display: none;">Start</button>
         </div>
+
+        <!-- Quest Container -->
 
         <div id="quest-container" style="display: none;">
             <div id="quest-text">Text</div>
@@ -100,11 +117,9 @@
         </div>
     </div>
 
-
     <!-- Footer -->
 
     <footer class="footer">
-
         <div class="footer-links">
             <a href="mailto:h.l.yates@hotmail.com"><i class="far fa-envelope"></i></a>
             <a href="https://www.linkedin.com/in/helen-yates"><i class="fab fa-linkedin"></i></a>
@@ -121,9 +136,9 @@
             </script> All rights reserved | Helen Yates</p>
         <p class="credits">
             <span><a href="https://unsplash.com/photos/DKix6Un55mw">Photo</a> by <a
-                    href="https://unsplash.com/@jplenio?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Johannes
+                    href="https://unsplash.com/@jplenio">Johannes
                     Plenio</a> on <a
-                    href="https://unsplash.com/s/photos/fantasy-world?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
+                    href="https://unsplash.com">Unsplash</a></span>
         </p>
     </footer>
 </body>

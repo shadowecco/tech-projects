@@ -47,7 +47,6 @@ a:visited {
   color: #fff;
 }
 
-/* Love Container */
 .love-container {
   background: rgba(255, 0, 0, 0.5);
   text-align: center;
@@ -66,7 +65,6 @@ a:visited {
   padding-bottom: 20px;
 }
 
-/* Form */
 .love-form {
   display: -ms-grid;
   display: grid;
@@ -103,13 +101,11 @@ button {
   grid-column: 2 / 3;
 }
 
-/* Name Text Label */
 .name-text {
   padding-left: 125px;
   text-align: left;
 }
 
-/* Name Text Area */
 input {
   float: left;
   width: 500px;
@@ -144,7 +140,6 @@ input {
   font-size: 1.5rem;
 }
 
-/* Footer */
 .footer {
   position: absolute;
   font-family: "Roboto", sans-serif;

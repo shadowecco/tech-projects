@@ -1,16 +1,24 @@
 @import "./_variables.scss";
-
+// Body
 body {
     text-align: center;
     background-color: $bodybackground;
     font-family: $funfont;
 }
 
+// Github Container
 .github-button {
     font-family: $gitfont;
     font-size: $footerlinks;
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+// Game Container
+.container {
+    display: block;
+    width: 50%;
+    margin: auto;
 }
 
 #level-title {
@@ -25,12 +33,12 @@ body {
     margin-bottom: 0px;
 }
 
-.container {
-    display: block;
-    width: 50%;
-    margin: auto;
+.game-over {
+    background-color: $redbutton;
+    opacity: 0.8;
 }
 
+// Simon Buttons
 .simon-btn {
     margin: 25px;
     display: inline-block;
@@ -38,11 +46,6 @@ body {
     width: 200px;
     border: 10px solid black;
     border-radius: 20%;
-}
-
-.game-over {
-    background-color: $redbutton;
-    opacity: 0.8;
 }
 
 .red {
@@ -66,9 +69,7 @@ body {
     background-color: $pressed;
 }
 
-
-/* Footer */
-
+// Footer
 footer {
     position: absolute;
     bottom: 0;

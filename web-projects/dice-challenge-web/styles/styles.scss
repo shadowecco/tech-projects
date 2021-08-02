@@ -1,16 +1,11 @@
 @import "./_variables.scss";
-
+// Body 
 body {
-    background-color: $bodyColour;  
+    background-color: $bodyColour;
     font-family: $funfont;
 }
 
-.container {
-    width: 70%;
-    margin: auto;
-    text-align: center;
-}
-
+// Github Button
 .github-button {
     font-size: $footerLinks;
     font-family: $gitfont;
@@ -18,11 +13,14 @@ body {
     margin-bottom: 30px;
 }
 
-.dice {
+// Game Container
+.container {
+    width: 70%;
+    margin: auto;
     text-align: center;
-    display: inline-block;
 }
 
+// Header
 h1 {
     font-family: $funfont;
     margin: 30px;
@@ -32,6 +30,7 @@ h1 {
     color: $funColour;
 }
 
+// Winner Declaration
 #winner {
     font-family: $funfont;
     text-align: center;
@@ -45,13 +44,17 @@ p {
     color: $funColour;
 }
 
+// Dice
+.dice {
+    text-align: center;
+    display: inline-block;
+}
+
 img {
     width: 80%;
 }
 
-
-/* Footer */
-
+// Footer
 footer {
     position: absolute;
     bottom: 0;

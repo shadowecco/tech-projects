@@ -4,7 +4,7 @@
 
 Currently on-going
 
-[View the page here](https://shadowecco.github.io/portfolio/dice-challenge-web/).<br />
+[View the page here](https://shadowecco.github.io/portfolio/adventure-game-web/).<br />
 [Python Version (Ongoing) (@replit.com)](https://replit.com/@HelenYates/Adventure-Game-v2).<br />
 [Python Version (Ongoing) (Code)](https://github.com/shadowecco/tech-projects/tree/main/python-projects/adventure-game-python/v2).
 
