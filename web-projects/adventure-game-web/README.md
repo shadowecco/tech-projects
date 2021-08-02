@@ -1,4 +1,4 @@
-**Last Updated:** 31st July 2021
+**Last Updated:** 3rd August 2021
 
 # Web Adventure Game
 
