@@ -100,20 +100,6 @@ a {
   text-align: center;
 }
 
-.footer-links {
-  display: inline-block;
-  text-align: center;
-  font-size: 25px;
-  position: relative;
-  z-index: 5;
-}
-
-.footer-links a {
-  color: #DBEDF3;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
 .copyright {
   font-size: 15px;
   color: #DBEDF3;

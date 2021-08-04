@@ -52,7 +52,7 @@ form {
     grid-template-columns: 200px 1fr;
     grid-gap: 16px;
     padding-left: 100px;
-    padding-bottom: 20px;
+    padding-bottom: 0px;
 }
 
 input[type=text],
@@ -150,20 +150,6 @@ input {
     margin-top: 5%;
     text-align: center;
     background: rgba(63, 63, 63, 0.5);
-}
-
-.footer-links {
-    display: inline-block;
-    text-align: center;
-    font-size: 25px;
-    position: relative;
-    z-index: 5;
-}
-
-.footer-links a {
-    font-size: $footerlinks;
-    padding-left: 10px;
-    padding-right: 10px;
 }
 
 .credits {

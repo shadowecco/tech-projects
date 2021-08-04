@@ -7,7 +7,7 @@ html {
 
 body {
   margin: 0;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #e91b1b;
   background-image: url(../images/love-heart-by-jamie-street-unsplash.png);
   background-repeat: no-repeat;
@@ -141,7 +141,7 @@ input {
 }
 
 .footer {
-  position: absolute;
+  position: static;
   font-family: "Roboto", sans-serif;
   bottom: 0;
   width: 100%;
@@ -149,21 +149,6 @@ input {
   font-size: 15px;
   text-align: center;
   background: #e91b1b;
-  position: absolute;
-}
-
-.footer-links {
-  display: inline-block;
-  text-align: center;
-  position: relative;
-  z-index: 5;
-}
-
-.footer-links a {
-  color: #EAF6F6;
-  font-size: 25px;
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
 .credits {

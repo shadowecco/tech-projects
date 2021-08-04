@@ -31,7 +31,6 @@ const optionButtonsElement = $('#option-buttons')[0]
 // Footer Elements
 
 const footerElement = $("footer")[0]
-const footerLinks = $("footer")[0].getElementsByTagName("div")[0]
 const footerCopyright = $("footer")[0].getElementsByTagName("p")[0]
 const footerCredit = $("footer")[0].getElementsByTagName("p")[1]
 
@@ -59,7 +58,6 @@ function playerIntro() {
 
     titleElement.remove();
     beginBtn.classList.add('hide')
-    footerLinks.remove();
     footerCopyright.remove();
 
     playerElement.style.display = "block";

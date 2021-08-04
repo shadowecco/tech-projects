@@ -6,7 +6,7 @@ html {
 // Body
 body {
     margin: 0;
-    height: 100vh;
+    min-height: 100vh;
     background-color: $heart;
     background-image: url(#{$images}/love-heart-by-jamie-street-unsplash.png);
     background-repeat: no-repeat;
@@ -130,7 +130,7 @@ input {
 
 // Footer
 .footer {
-    position: absolute;
+    position: static;
     font-family: $gitfont;
     bottom: 0;
     width: 100%;
@@ -138,21 +138,6 @@ input {
     font-size: $footer;
     text-align: center;
     background: $heart;
-    position: absolute;
-}
-
-.footer-links {
-    display: inline-block;
-    text-align: center;
-    position: relative;
-    z-index: 5;
-}
-
-.footer-links a {
-    color: $offwhite;
-    font-size: $footerlinks;
-    padding-left: 10px;
-    padding-right: 10px;
 }
 
 .credits {

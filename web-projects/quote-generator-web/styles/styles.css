@@ -105,20 +105,6 @@ button:active {
   text-align: center;
 }
 
-.footer-links {
-  display: inline-block;
-  text-align: center;
-  font-size: 25px;
-  position: relative;
-  z-index: 5;
-}
-
-.footer-links a {
-  color: #EEEEEE;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
 .copyright {
   font-size: 15px;
   color: #EEEEEE;

@@ -37,15 +37,6 @@ body {
   margin-bottom: 30px;
 }
 
-a {
-  color: white;
-}
-
-a:visited {
-  color: white;
-}
-
-/* Container */
 .container {
   background: rgba(63, 63, 63, 0.5);
   text-align: center;
@@ -63,7 +54,6 @@ a:visited {
   padding-bottom: 20px;
 }
 
-/* Form */
 form {
   display: -ms-grid;
   display: grid;
@@ -71,7 +61,7 @@ form {
       grid-template-columns: 200px 1fr;
   grid-gap: 16px;
   padding-left: 100px;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
 }
 
 input[type=text],
@@ -100,13 +90,19 @@ button {
   grid-column: 2 / 3;
 }
 
-/* Name Text Label */
+a {
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
 .name-text {
   padding-left: 125px;
   text-align: left;
 }
 
-/* Name Text Area */
 input {
   float: left;
   width: 500px;
@@ -153,7 +149,6 @@ input {
   font-size: 1.2rem;
 }
 
-/* Footer */
 .footer {
   position: absolute;
   font-family: "Roboto", sans-serif;
@@ -163,20 +158,6 @@ input {
   margin-top: 5%;
   text-align: center;
   background: rgba(63, 63, 63, 0.5);
-}
-
-.footer-links {
-  display: inline-block;
-  text-align: center;
-  font-size: 25px;
-  position: relative;
-  z-index: 5;
-}
-
-.footer-links a {
-  font-size: 25px;
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
 .credits {

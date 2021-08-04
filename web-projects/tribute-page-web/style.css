@@ -93,21 +93,6 @@ blockquote {
     background-color: green;
 }
 
-.footer-links {
-    display: inline-block;
-    text-align: center;
-    font-size: 25px;
-    position: relative;
-    z-index: 5;
-}
-
-.footer-links a {
-    color: #fff;
-    font-size: 25px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
 .copyright {
     color: #fff;
     text-align: center;
