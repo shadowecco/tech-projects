@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper and Scissors</title>
+
+    <!-- Favicon -->
+
+    <link rel="icon" type="image/png" href="favicon.ico" />
+
+    <!-- Bootstrap -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" />
+
+    <!-- Stylesheet -->
+
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <!-- Javascript -->
+
+    <script defer src="game.js"></script>
+
+    <!-- Font Awesome Icons -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+</head>
+
+<body>
+
+    <!-- Github Button -->
+
+    <div class="github-div" id="github-div"><a class="btn btn-outline-primary btn-lg github-button" id="github-button" href="https://github.com/shadowecco/tech-projects/tree/main/web-projects/rock-paper-scissors-web"><i class="fab fa-github"></i> View Project Code at GitHub</a></div>
+
+    <!-- Header -->
+
+    <header>
+        <h1>Rock Paper Scissors</h1>
+    </header>
+
+    <!-- Score Board -->
+
+    <div class="score-board" id="score-board">
+        <div id="user-label" class="badge">user</div>
+        <div id="computer-label" class="badge">comp</div>
+        <span id="user-score">0</span>:<span id="computer-score">0</span>
+    </div>
+
+
+    <!-- Result -->
+
+    <div class="result" id="result">
+        <p id="results">Make your move!</p>
+    </div>
+
+    <!-- Player Choices -->
+
+    <div class="user-choices" id="user-choices">
+        <h2>User<span class="user-choice-text" id="user-choice-text"></span></h2>
+        <div class="user-choice" id="user-choice">
+            <i class="far fa-hand-rock fa-5x choice-icon" title="Rock" id="user-r" onclick="select('rock')"></i>
+            <i class="far fa-hand-paper fa-5x choice-icon" title="Paper" id="user-p" onclick="select('paper')"></i>
+            <i class="far fa-hand-scissors fa-5x choice-icon" title="Scissors" id="user-s" onclick="select('scissors')"></i>
+        </div>
+    </div>
+
+    <!-- Computer Choices -->
+
+    <div class="computer-choices" id="computer-choices">
+        <h2>Computer<span class="computer-choice-text" id="computer-choice-text"></span></h2>
+        <div class="computer-choice" id="computer-choice">
+            <i class="far fa-hand-rock fa-5x choice-icon" title="Rock" id="computer-r"></i>
+            <i class="far fa-hand-paper fa-5x choice-icon" title="Paper" id="computer-p"></i>
+            <i class="far fa-hand-scissors fa-5x choice-icon" title="Scissors" id="computer-s"></i>
+        </div>
+    </div>
+
+
+    <!-- Reset Button -->
+
+    <div class="reset" id="reset">
+        <p class="reset-text" id="reset-text">Press to Reset Game</p><i class="fas fa-sync-alt reset-icon fa-2x" title="Reset" onclick="resetAll()"></i>
+    </div>
+</body>
+
+<!-- Footer -->
+
+<footer class="footer sticky-bottom" id="footer">
+    <p class="copyright">
+        Copyright &copy;2020 -
+        <script>
+            document.write(new Date().getFullYear());
+        </script> All rights reserved | Helen Yates</p>
+    </p>
+
+</footer>

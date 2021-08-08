@@ -45,5 +45,10 @@ Generates a "Star Wars" style based on certain conditions.
 
 **8. Web Adventure Game (HTML/CSS/SASS/Bootstrap/Javascript/JQuery)**
 
-Generates a "Star Wars" style based on certain conditions. 
+Generates a Text Adventure Game
+
+**9. Rock Paper Scissors (HTML/CSS/SASS/Bootstrap/Javascript/)**
+
+Play "Rock Paper Scissors" against the computer 
+
 

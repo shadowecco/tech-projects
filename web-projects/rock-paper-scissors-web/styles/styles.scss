@@ -1,0 +1,154 @@
+@import "./_variables.scss";
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Body
+body {
+    background-color: $bodybackground;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+}
+
+// Github Container 
+.github-div {
+    background-color: $text;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.github-button {
+    align-items: center;
+    font-family: $gitfont;
+    margin-top: 5px;
+}
+
+//Header
+header {
+    background-color: $text;
+    padding: 15px;
+}
+
+header>h1 {
+    font-family: $gamefont;
+    font-size: $header;
+    font-weight: bold;
+    text-align: center;
+}
+
+// Score Board
+.score-board {
+    margin: 20px auto;
+    border: 3px solid $text;
+    border-radius: 4px;
+    text-align: center;
+    width: 200px;
+    color: $text;
+    font-size: 46px;
+    padding: 15px 20px;
+    position: relative;
+}
+
+.badge {
+    background: $userbadge;
+    font-family: $scorefont;
+    font-size: 16px;
+    padding: 2px 10px;
+}
+
+#user-name {
+    color: $text;
+    font-size: $player;
+    font-family: $scorefont;
+    margin-bottom: 35px;
+}
+
+#user-label {
+    position: absolute;
+    top: 30px;
+    left: -25px;
+}
+
+#computer-label {
+    position: absolute;
+    top: 30px;
+    right: -30px;
+}
+
+// Game Result
+.result {
+    font-size: $message;
+    font-family: $gamefont;
+    color: $text;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.results {
+    font-size: $message;
+    font-family: $gamefont;
+    color: $text;
+    text-align: center;
+    font-weight: bold;
+}
+
+// Choices
+.user-choices,
+.computer-choices {
+    color: $text;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.user-choice,
+.computer-choice,
+.choice-icon {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: $text;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.selected {
+    color: $selected !important;
+}
+
+//Reset 
+.reset {
+    text-align: center;
+}
+
+.reset-icon {
+    display: inline-block;
+    color: $text;
+    padding: 10px 0 10px 0;
+}
+
+.reset-text {
+    font-size: $player;
+    font-family: $gamefont;
+    color: $text;
+}
+
+// Footer
+.footer {
+    width: 100%;
+    bottom: 0px;
+    position: static;
+    color: $text;
+    font-family: $gitfont;
+    text-align: center;
+    padding: 10px 0 20px;
+}
+
+.copyright {
+    padding-top: 5px;
+}
