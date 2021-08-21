@@ -11,6 +11,8 @@ Back in the late 1990s/200s, there was a trend of coming up with your Star Wars 
 - first 2 letters of your mother's maiden name
 - first 3 letters of the town you were born in
 
+Font can be found [here](https://www.1001fonts.com/death-star-font.html).
+
 Created  Visual Studio Code with:
 
 - HTML

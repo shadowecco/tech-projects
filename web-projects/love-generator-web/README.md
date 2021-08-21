@@ -5,6 +5,8 @@
 [Python Version (@replit.com)](https://replit.com/@HelenYates/5-Love-Generator).<br />
 [Python Version (Code)](https://github.com/shadowecco/tech-projects/tree/main/python-projects/love-generator).
 
+Font can be found [here](https://www.1001fonts.com/ladybug-love-demo-font.html).
+
 Generates a random love score
 
 Created  Visual Studio Code with:

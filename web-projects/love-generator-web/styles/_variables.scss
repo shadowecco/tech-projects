@@ -1,29 +1,34 @@
 // Google Fonts
-
-@import url('https://fonts.googleapis.com/css2?family=Loved+by+the+King&family=Lovers+Quarrel&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+//Imported Fonts
+// Love and Beauty (https://www.1001fonts.com/ladybug-love-demo-font.html)
+@font-face {
+    font-family: 'Ladybug Love Regular';
+    src: url('../assets/fonts/ladybug-love/ladybug-love-demo.regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 // Font Variables
-
-$lovefont: 'Loved by the King', cursive;
-$gitfont: 'Roboto', sans-serif;
-
+$lovefont: 'Ladybug Love Regular';
+$gitfont: 'Roboto',
+sans-serif;
 // Font Size Variables
-
 $title: 3rem;
 $subtitle: 2rem;
 $name: 30px;
 $footer: 15px;
 $footerlinks: 25px;
 $footertext: 0.9em;
-
 // Variables
-
 $bodybackground: #393E46;
-$heart: rgb(233, 27, 27);
-$shinyheart: rgba(255, 0, 0, 0.5);
+$heart: rgb(233,
+27,
+27);
+$shinyheart: rgba(255,
+0,
+0,
+0.5);
 $snow: #fff;
 $offwhite: #EAF6F6;
-
-$images: "../images";
+$images: "../assets/images";

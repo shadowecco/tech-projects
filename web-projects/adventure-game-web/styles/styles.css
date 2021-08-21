@@ -1,6 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Bad+Script&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap");
+@font-face {
+  font-family: 'Enchanted Land';
+  src: url("../assets/fonts/enchanted-land/enchanted-land.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .magicBgColour,
 .magicBgColour a {
   color: #a00f88;
@@ -38,7 +44,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-image: url(../images/photo-by-johannes-plenio-unsplash.jpg);
+  background-image: url(../assets/images//photo-by-johannes-plenio-unsplash.jpg);
   font-family: "Merienda", cursive;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -75,7 +81,8 @@ body {
 }
 
 #header {
-  font-family: "Bad Script", cursive;
+  font-family: "Enchanted Land";
+  font-size: 3em;
   text-align: center;
   color: white;
 }

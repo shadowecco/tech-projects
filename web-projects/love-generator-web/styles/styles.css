@@ -1,5 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Loved+by+the+King&family=Lovers+Quarrel&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@font-face {
+  font-family: 'Ladybug Love Regular';
+  src: url("../assets/fonts/ladybug-love/ladybug-love-demo.regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -9,10 +15,10 @@ body {
   margin: 0;
   min-height: 100vh;
   background-color: #e91b1b;
-  background-image: url(../images/love-heart-by-jamie-street-unsplash.png);
+  background-image: url(../assets/images/love-heart-by-jamie-street-unsplash.png);
   background-repeat: no-repeat;
   color: #fff;
-  font-family: "Loved by the King", cursive;
+  font-family: "Ladybug Love Regular";
   background-size: 100%;
   font-weight: 700;
   text-align: center;

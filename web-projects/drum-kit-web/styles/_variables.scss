@@ -1,25 +1,17 @@
 // Google Fonts
-
 @import url('https://fonts.googleapis.com/css2?family=Boogaloo&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
 // Font Variables
-
-$musicfont: 'Boogaloo', cursive;
-$gitfont: 'Roboto', sans-serif;
-
+$musicfont: 'Boogaloo',
+cursive;
+$gitfont: 'Roboto',
+sans-serif;
 // Font Size Variables
-
 $heading: 5rem;
 $footerLinks: 25px;
 $footerCopyright: 15px;
 $github: 20px;
-
-
 // Variables
-
 $bodybackground: #283149;
 $clear: #DBEDF3;
-
-$music: "../images";
+$images: "../assets/images";
